@@ -28,11 +28,13 @@ public class Arraylist_1 {
         list.set(2, 14);
         System.out.println(list);
 
-        list.forEach(item -> System.out.print(item+" "));
+        // list.forEach(item -> System.out.print(item+" "));
 
         // System.out.println(list.sort());
 
-        
+        list
+
+
 
 
     }
