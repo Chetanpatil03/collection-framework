@@ -1,0 +1,350 @@
+### ✅ **Basic ArrayList Problems**
+
+1. **Create and Add Elements**
+   Create an `ArrayList` of Strings. Add 5 names to it and print the list.
+
+2. **Access Elements**
+   Given an `ArrayList` of integers, print the element at index 2.
+
+3. **Update an Element**
+   Update the second element in an `ArrayList` of Strings from `"Apple"` to `"Banana"`.
+
+4. **Remove an Element**
+   Remove the element at index 1 from an `ArrayList` of integers.
+
+5. **Find the Size**
+   Create an `ArrayList` of doubles. Add a few elements and print the size.
+
+6. **Check if Element Exists**
+   Check whether a specific value exists in an `ArrayList`.
+
+7. **Iterate Over an ArrayList**
+   Use a `for` loop to print all elements in an `ArrayList` of Strings.
+
+8. **Sort an ArrayList**
+   Sort an `ArrayList` of integers in ascending order.
+
+9. **Reverse an ArrayList**
+   Reverse the order of elements in an `ArrayList` of Strings.
+
+10. **Convert ArrayList to Array**
+    Convert an `ArrayList` of Integers into a regular array.
+
+---
+Sure! Here’s the **next 10 basic to slightly intermediate ArrayList problems** (11–20), still beginner-friendly but with a bit more logic involved:
+
+---
+
+### ✅ **ArrayList Problems (11–20)**
+
+11. **Insert Element at Specific Index**
+    Insert an element at index 2 in an `ArrayList` of Strings.
+
+12. **Clear an ArrayList**
+    Remove all elements from an `ArrayList` using `.clear()`.
+
+13. **Copy One ArrayList to Another**
+    Copy all elements from one `ArrayList` to another.
+
+14. **Find Index of an Element**
+    Find the index of a given element in an `ArrayList`.
+
+15. **Check if ArrayList is Empty**
+    Write a program to check if an `ArrayList` is empty or not.
+
+16. **Merge Two ArrayLists**
+    Merge two `ArrayList`s of integers into a single list.
+
+17. **Remove All Elements of Another List**
+    Given two `ArrayList`s, remove all elements in the second list from the first.
+
+18. **Find Maximum and Minimum Values**
+    Find the max and min values in an `ArrayList` of integers.
+
+19. **Remove Duplicates**
+    Remove duplicate elements from an `ArrayList` of Strings.
+
+20. **Convert Array to ArrayList**
+    Convert a regular array of integers into an `ArrayList`.
+
+---
+Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing from the previous ones. These include a mix of basic, logical, and beginner-level algorithmic problems involving ArrayLists.
+
+---
+
+### ✅ **ArrayList Problems (21–40)**
+
+21. **Find All Occurrences of an Element**
+    Find and print all indices where a specific element occurs in an `ArrayList`.
+
+22. **Count Occurrences of an Element**
+    Count how many times a given element appears in an `ArrayList`.
+
+23. **Remove All Occurrences of a Value**
+    Remove **all** occurrences of a specific value from an `ArrayList`.
+
+24. **Find Second Largest Number**
+    Find the second largest element in an `ArrayList` of integers.
+
+25. **Swap Two Elements**
+    Swap the elements at index 1 and index 3 in an `ArrayList`.
+
+26. **Create ArrayList from User Input**
+    Read `n` integers from user input and store them in an `ArrayList`.
+
+27. **Compare Two ArrayLists**
+    Compare two `ArrayList`s and print the common elements.
+
+28. **Print Even Numbers Only**
+    From an `ArrayList` of integers, print only the even numbers.
+
+29. **Print Odd Numbers Only**
+    From an `ArrayList` of integers, print only the odd numbers.
+
+30. **Replace All Elements with Square**
+    Replace each number in an `ArrayList` with its square.
+
+31. **Find Frequency of All Elements**
+    Print the frequency of each element in an `ArrayList` (no libraries).
+
+32. **Check if ArrayList is Palindrome**
+    Check whether the elements in an `ArrayList` form a palindrome.
+
+33. **Print Duplicate Elements**
+    Print only the elements that appear more than once in an `ArrayList`.
+
+34. **Find Unique Elements**
+    Print elements that appear **only once** in an `ArrayList`.
+
+35. **Sort in Descending Order**
+    Sort an `ArrayList` of integers in **descending** order.
+
+36. **Sum of All Elements**
+    Calculate and print the sum of all numbers in an `ArrayList`.
+
+37. **Find Common Elements in Three Lists**
+    Given three `ArrayList`s, print the elements common to all three.
+
+38. **Remove Null Values**
+    Remove all `null` values from an `ArrayList`.
+
+39. **Reverse Without Built-in Function**
+    Reverse the `ArrayList` manually (without using `Collections.reverse()`).
+
+40. **Find Longest String**
+    From an `ArrayList` of Strings, find the one with the maximum length.
+
+---
+
+Awesome! Here's the next set of **ArrayList problems (41–60)** — these are still beginner to intermediate level but now include a bit more logic, edge cases, and light algorithmic thinking to help build deeper understanding.
+
+---
+
+### ✅ **ArrayList Problems (41–60)**
+
+41. **Find the First Repeating Element**
+    Find the first element that appears more than once in an `ArrayList`.
+
+42. **Find the First Non-Repeating Element**
+    Find the first element that appears only once in an `ArrayList`.
+
+43. **Count Even and Odd Numbers**
+    Count how many even and odd numbers are present in an `ArrayList`.
+
+44. **Move All Zeroes to End**
+    Rearrange an `ArrayList` so that all `0`s are moved to the end, maintaining the order of non-zero elements.
+
+45. **Left Rotate by One Position**
+    Rotate the `ArrayList` to the left by one position (first element moves to end).
+
+46. **Right Rotate by K Positions**
+    Rotate the `ArrayList` to the right by `k` positions.
+
+47. **Sum of Elements at Even Indices**
+    Find the sum of elements at even indices in an `ArrayList`.
+
+48. **Find Pairs with Given Sum**
+    Print all pairs of elements from an `ArrayList` whose sum is equal to a given number.
+
+49. **Find Triplets with Given Sum**
+    Find all triplets in the `ArrayList` that sum up to a given value.
+
+50. **Check if Two Lists are Disjoint**
+    Determine if two `ArrayList`s have no elements in common.
+
+51. **Partition into Even and Odd Lists**
+    Given a list of integers, separate it into two lists: one with even, one with odd numbers.
+
+52. **Remove Elements Greater Than X**
+    Remove all elements from an `ArrayList` that are greater than a given value `X`.
+
+53. **Replace Negative Numbers with Zero**
+    In an `ArrayList` of integers, replace all negative numbers with `0`.
+
+54. **Filter Strings Starting with Vowel**
+    From an `ArrayList` of strings, print only the ones that start with a vowel.
+
+55. **Create List of Squares from Another List**
+    Given an `ArrayList` of integers, create a new list containing the squares of the original elements.
+
+56. **Find All Subarrays of Size K**
+    Print all contiguous subarrays of size `k` from an `ArrayList`.
+
+57. **Check if List is Sorted**
+    Check whether an `ArrayList` is sorted in ascending order.
+
+58. **Find Frequency of Characters in String List**
+    Given an `ArrayList` of single-character strings, count the frequency of each character.
+
+59. **Merge Two Sorted ArrayLists**
+    Merge two sorted `ArrayList`s into a new sorted `ArrayList`.
+
+60. **Check If One List Is Sublist of Another**
+    Determine if all elements of one `ArrayList` appear in another in the same order (not necessarily consecutive).
+
+---
+Here you go! The next 20 ArrayList problems (61–80):
+
+---
+
+### ✅ **ArrayList Problems (61–80)**
+
+61. **Find Intersection of Two Lists**
+    Find all elements common to two `ArrayList`s (no duplicates in output).
+
+62. **Find Union of Two Lists**
+    Create a list containing all unique elements from two `ArrayList`s combined.
+
+63. **Check If List Contains Only Unique Elements**
+    Determine if an `ArrayList` has all unique elements.
+
+64. **Find Element with Maximum Frequency**
+    Identify the element that appears most frequently in an `ArrayList`.
+
+65. **Remove Elements at Even Indices**
+    Remove elements located at even indices from an `ArrayList`.
+
+66. **Insert Element in Sorted ArrayList**
+    Insert an element into a sorted `ArrayList` maintaining the sorted order.
+
+67. **Find Missing Number in 1 to N List**
+    Given an `ArrayList` of numbers from 1 to N with one missing, find the missing number.
+
+68. **Check if Two Lists are Equal**
+    Determine if two `ArrayList`s are exactly the same (same elements in the same order).
+
+69. **Replace Every Element with Next Greatest Element**
+    Replace each element in the list with the greatest element to its right.
+
+70. **Find the Length of Longest Consecutive Sequence**
+    Find the length of the longest sequence of consecutive integers in an unsorted `ArrayList`.
+
+71. **Rotate ArrayList by K Using Reversal Algorithm**
+    Rotate an `ArrayList` by K positions to the right using reversal technique.
+
+72. **Find Pairs with Difference K**
+    Find all pairs of elements in the list whose difference is K.
+
+73. **Find All Leaders in an ArrayList**
+    An element is a leader if it is greater than all elements to its right; find all leaders.
+
+74. **Count Inversions in ArrayList**
+    Count how many pairs of elements are out of order (inversions).
+
+75. **Find Majority Element**
+    Find the element that appears more than n/2 times if it exists.
+
+76. **Find Missing and Repeated Number**
+    In a list of numbers from 1 to N, find the missing and repeated number.
+
+77. **Implement ArrayList Using LinkedList**
+    Simulate ArrayList operations using a linked list.
+
+78. **Find Equilibrium Index**
+    Find an index such that the sum of elements on its left equals sum on its right.
+
+79. **Sum of Two Largest Elements**
+    Find the sum of the two largest elements in an `ArrayList`.
+
+80. **Find Longest Increasing Subsequence Length**
+    Find the length of the longest strictly increasing subsequence in an `ArrayList`.
+
+---
+
+Got it! I’ll round it up to 100 total ArrayList problems for you.
+
+Here are problems **81 to 100** to complete the list:
+
+---
+
+### ✅ **ArrayList Problems (81–100)**
+
+81. **Find the Second Smallest Element**
+    Find the second smallest element in an `ArrayList` of integers.
+
+82. **Check if Two Lists are Anagrams**
+    Determine if two `ArrayList`s of characters are anagrams of each other.
+
+83. **Find All Missing Numbers in Range**
+    Given an `ArrayList` of numbers from 1 to N, find all missing numbers.
+
+84. **Find Pair with Maximum Product**
+    Find the pair of elements whose product is maximum.
+
+85. **Find the Kth Largest Element**
+    Find the kth largest element in an `ArrayList`.
+
+86. **Find the Kth Smallest Element**
+    Find the kth smallest element in an `ArrayList`.
+
+87. **Remove Elements Less Than X**
+    Remove all elements less than a given value X.
+
+88. **Rotate List Left by K Positions**
+    Rotate an `ArrayList` to the left by k positions.
+
+89. **Count Number of Positive and Negative Elements**
+    Count positive and negative numbers separately in an `ArrayList`.
+
+90. **Find the Longest Word**
+    From a list of words, find the longest word.
+
+91. **Find the Shortest Word**
+    From a list of words, find the shortest word.
+
+92. **Find Elements Appearing More Than N/3 Times**
+    Find all elements that appear more than n/3 times.
+
+93. **Find the Median of ArrayList**
+    Find the median value in an `ArrayList`.
+
+94. **Move All Negative Numbers to Front**
+    Rearrange elements to move all negative numbers to the front.
+
+95. **Count Pairs with Sum Less Than K**
+    Count the number of pairs with sum less than a given K.
+
+96. **Find the Number of Distinct Elements**
+    Count the number of distinct elements in an `ArrayList`.
+
+97. **Check if ArrayList Contains Consecutive Integers**
+    Check if the list contains consecutive integers without duplicates.
+
+98. **Find the Largest Sum Contiguous Subarray**
+    Find the maximum sum of any contiguous subarray (Kadane’s Algorithm).
+
+99. **Print Elements in Spiral Order (2D ArrayList)**
+    Given a 2D ArrayList, print elements in spiral order.
+
+100. **Implement Stack Using ArrayList**
+     Implement stack operations (push, pop, peek) using an `ArrayList`.
+
+---
+
+There you have it — a **complete list of 100 ArrayList problems** from basic to intermediate levels! 🎉
+
+
+
+
+
+
