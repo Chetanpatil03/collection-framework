@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 
 class Student{
     private String name;
@@ -50,11 +51,22 @@ public class Comparator_2 {
                 return -1;
             }
             else{
-                return 0;
+                return a.getName().compareTo(b.getName());
             }
         });
 
         System.out.println("After sorting : ");
         System.out.println(studentsList);
+
+
+
+        // studentsList.sort(Comparator.comparing(Student::getCGPA));
+        // System.out.println("After");
+        // System.out.println(studentsList);
+
+        studentsList.sort(Comparator.comparing(Student::getCGPA).thenComparing(Student::getName)); //method chaining -- alice bob have same cgpa (4,4) then sorting will be done by their names
+        System.out.println("After");
+        System.out.println(studentsList);
+
     }
 }
