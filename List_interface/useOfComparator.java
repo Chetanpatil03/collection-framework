@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 
 class IntegerComparator implements Comparator<Integer>{
@@ -40,5 +41,32 @@ public class useOfComparator {
         System.out.println("Sorting Descending : ");
         listIntegers.sort(new IntegerComparator());
         System.out.println(listIntegers);
+
+
+        ArrayList<String> stringsList = new ArrayList<>();
+        stringsList.addAll(Arrays.asList("Chetan","Prafulla","Om","Raj"));
+
+        System.out.println(stringsList);
+
+        //sorting list by lambda comparotor
+
+        stringsList.sort((a,b)-> a.length() - b.length());
+        System.out.println("Increasing length of words : ");
+        System.out.println(stringsList);
+
+        stringsList.sort((a,b)-> b.length() - a.length());
+        System.out.println("Decreasing length of words : ");
+        System.out.println(stringsList);
+
+        stringsList.sort(null);
+        System.out.println("Sorting ascending order");
+        System.out.println(stringsList);
+
+        // stringsList.sort((a, b) -> b.compareTo(a)); // descending lexicographical order
+        stringsList.sort((a, b) -> b.charAt(0) - a.charAt(0)); // decsecnding order
+        System.out.println("Sorting descending lexicographical order");
+        System.out.println(stringsList);
+
+
     }
 }
