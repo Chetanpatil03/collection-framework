@@ -22,6 +22,13 @@ public class Two {
         System.out.println("\nFruits : ");
         fruits.forEach(x-> System.err.println(x+", "));
 
+        //six
+        System.out.println("is Apple exist : "+fruits.contains("Apple"));
+
+        //nine 
+        fruits.sort((var0x, var1x) -> var0x.compareTo(var1x));
+        System.out.println(fruits);
+
     }
 }
 
