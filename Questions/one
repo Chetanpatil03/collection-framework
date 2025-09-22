@@ -18,7 +18,7 @@
 6. **Check if Element Exists**
    Check whether a specific value exists in an `ArrayList`.
 
-7. **Iterate Over an ArrayList**
+-- 7. **Iterate Over an ArrayList**
    Use a `for` loop to print all elements in an `ArrayList` of Strings.
 
 8. **Sort an ArrayList**
