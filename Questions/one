@@ -1,18 +1,18 @@
 ### ✅ **Basic ArrayList Problems**
 
-1. **Create and Add Elements**
+-- 1. **Create and Add Elements**
    Create an `ArrayList` of Strings. Add 5 names to it and print the list.
 
-2. **Access Elements**
+-- 2. **Access Elements**
    Given an `ArrayList` of integers, print the element at index 2.
 
 3. **Update an Element**
    Update the second element in an `ArrayList` of Strings from `"Apple"` to `"Banana"`.
 
-4. **Remove an Element**
+-- 4. **Remove an Element**
    Remove the element at index 1 from an `ArrayList` of integers.
 
-5. **Find the Size**
+-- 5. **Find the Size**
    Create an `ArrayList` of doubles. Add a few elements and print the size.
 
 6. **Check if Element Exists**
