@@ -6,7 +6,7 @@
 -- 2. **Access Elements**
    Given an `ArrayList` of integers, print the element at index 2.
 
-3. **Update an Element**
+-- 3. **Update an Element**
    Update the second element in an `ArrayList` of Strings from `"Apple"` to `"Banana"`.
 
 -- 4. **Remove an Element**
@@ -15,19 +15,19 @@
 -- 5. **Find the Size**
    Create an `ArrayList` of doubles. Add a few elements and print the size.
 
-6. **Check if Element Exists**
+-- 6. **Check if Element Exists**
    Check whether a specific value exists in an `ArrayList`.
 
 -- 7. **Iterate Over an ArrayList**
    Use a `for` loop to print all elements in an `ArrayList` of Strings.
 
-8. **Sort an ArrayList**
+-- 8. **Sort an ArrayList**
    Sort an `ArrayList` of integers in ascending order.
 
-9. **Reverse an ArrayList**
+-- 9. **Reverse an ArrayList**
    Reverse the order of elements in an `ArrayList` of Strings.
 
-10. **Convert ArrayList to Array**
+-- 10. **Convert ArrayList to Array**
     Convert an `ArrayList` of Integers into a regular array.
 
 ---
