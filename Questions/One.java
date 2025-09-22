@@ -12,6 +12,7 @@ public class One {
         names.add("prafulla");
         names.add("navjit");
 
+        //seven
         System.out.print("Names : ");
         for (String string : names) {
             System.out.print(string+", ");
@@ -32,6 +33,8 @@ public class One {
 
 
 
+
+
     }
 
 
@@ -48,3 +51,6 @@ public class One {
 
 // -- 5. **Find the Size**
 //    Create an `ArrayList` of doubles. Add a few elements and print the size.
+
+// 7. **Iterate Over an ArrayList**
+//    Use a `for` loop to print all elements in an `ArrayList` of Strings.
