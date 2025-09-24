@@ -2,6 +2,8 @@ package Questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Five {
     public static void main(String[] args) {
@@ -25,12 +27,16 @@ public class Five {
 
         // Convert array to ArrayList
         int[] arr = {15, 48, 95, 35, 75};
-        
+
         ArrayList<Integer> arrList = new ArrayList<>();
         for (int num : arr) {
             arrList.add(num);
         }
         System.out.println("ArrayList from array: " + arrList);
+
+        // Convert to List<Integer> using streams
+        List<Integer> arrayList = Arrays.stream(arr).boxed().collect(Collectors.toList());
+        System.out.println(arrayList);
     }
 }
 
