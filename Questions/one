@@ -52,19 +52,19 @@ Sure! Here’s the **next 10 basic to slightly intermediate ArrayList problems**
 15. **Check if ArrayList is Empty**
     Write a program to check if an `ArrayList` is empty or not.
 
-16. **Merge Two ArrayLists**
+-- 16. **Merge Two ArrayLists**
     Merge two `ArrayList`s of integers into a single list.
 
 17. **Remove All Elements of Another List**
     Given two `ArrayList`s, remove all elements in the second list from the first.
 
-18. **Find Maximum and Minimum Values**
+-- 18. **Find Maximum and Minimum Values**
     Find the max and min values in an `ArrayList` of integers.
 
 19. **Remove Duplicates**
     Remove duplicate elements from an `ArrayList` of Strings.
 
-20. **Convert Array to ArrayList**
+-- 20. **Convert Array to ArrayList**
     Convert a regular array of integers into an `ArrayList`.
 
 ---
