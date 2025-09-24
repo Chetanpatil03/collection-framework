@@ -37,8 +37,16 @@ public class Five {
         // Convert to List<Integer> using streams
         List<Integer> arrayList = Arrays.stream(arr).boxed().collect(Collectors.toList());
         System.out.println(arrayList);
+
+        ArrayList<Integer> mergedArrayList = new ArrayList<>(list);
+        mergedArrayList.addAll(arrList);
+
+        System.out.println("Merged List : "+mergedArrayList);
     }
 }
+
+// 16. **Merge Two ArrayLists**
+//     Merge two `ArrayList`s of integers into a single list.
 
 // 18. **Find Maximum and Minimum Values**
 //     Find the max and min values in an `ArrayList` of integers.
