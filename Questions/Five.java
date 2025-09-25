@@ -2,7 +2,9 @@ package Questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Five {
@@ -47,6 +49,16 @@ public class Five {
         System.out.println("After removing : "+arrayList);
         list.removeAll(arrayList);
         System.out.println("After   : "+list);
+
+
+        System.out.println("\n\n\n");
+
+        ArrayList<String> names = new ArrayList<>();
+        names.addAll(Arrays.asList("chetan","dipak","prafull","nikhil","prafull","chetan","nikhil"));
+        System.out.println("Names : "+names);
+
+        Set<String> uniqueNames =  new HashSet<>(names);
+        System.out.println("Unique names : "+uniqueNames);
     }
 }
 
@@ -58,6 +70,9 @@ public class Five {
 
 // 18. **Find Maximum and Minimum Values**
 //     Find the max and min values in an `ArrayList` of integers.
+
+// 19. **Remove Duplicates**
+//     Remove duplicate elements from an `ArrayList` of Strings.
 
 // 20. **Convert Array to ArrayList**
 //     Convert a regular array of integers into an `ArrayList`.
