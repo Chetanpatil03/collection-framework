@@ -42,11 +42,19 @@ public class Five {
         mergedArrayList.addAll(arrList);
 
         System.out.println("Merged List : "+mergedArrayList);
+
+        System.out.println("Before  : "+list);
+        System.out.println("After removing : "+arrayList);
+        list.removeAll(arrayList);
+        System.out.println("After   : "+list);
     }
 }
 
 // 16. **Merge Two ArrayLists**
 //     Merge two `ArrayList`s of integers into a single list.
+
+// 17. **Remove All Elements of Another List**
+//     Given two `ArrayList`s, remove all elements in the second list from the first.
 
 // 18. **Find Maximum and Minimum Values**
 //     Find the max and min values in an `ArrayList` of integers.
