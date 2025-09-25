@@ -37,25 +37,25 @@ Sure! Here’s the **next 10 basic to slightly intermediate ArrayList problems**
 
 ### ✅ **ArrayList Problems (11–20)**
 
-11. **Insert Element at Specific Index**
+-- 11. **Insert Element at Specific Index**
     Insert an element at index 2 in an `ArrayList` of Strings.
 
-12. **Clear an ArrayList**
+-- 12. **Clear an ArrayList**
     Remove all elements from an `ArrayList` using `.clear()`.
 
-13. **Copy One ArrayList to Another**
+-- 13. **Copy One ArrayList to Another**
     Copy all elements from one `ArrayList` to another.
 
-14. **Find Index of an Element**
+-- 14. **Find Index of an Element**
     Find the index of a given element in an `ArrayList`.
 
-15. **Check if ArrayList is Empty**
+-- 15. **Check if ArrayList is Empty**
     Write a program to check if an `ArrayList` is empty or not.
 
 -- 16. **Merge Two ArrayLists**
     Merge two `ArrayList`s of integers into a single list.
 
-17. **Remove All Elements of Another List**
+-- 17. **Remove All Elements of Another List**
     Given two `ArrayList`s, remove all elements in the second list from the first.
 
 -- 18. **Find Maximum and Minimum Values**
