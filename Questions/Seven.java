@@ -2,8 +2,25 @@ package Questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Seven {
+
+    //problem number 26
+    public static ArrayList<Integer> usrInp() {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size : ");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter element : ");
+            list.add(sc.nextInt());
+        }
+
+        return list;
+    }
 
     // problem number 28
     public static void printEven(ArrayList<Integer> list) {
@@ -13,6 +30,7 @@ public class Seven {
                 System.out.print(" " + integer);
             }
         }
+        System.out.println();
     }
 
     //problem number 29
@@ -23,6 +41,7 @@ public class Seven {
                 System.out.print(" " + integer);
             }
         }
+        System.out.println();
     }
 
     public static int square(int n){
@@ -49,11 +68,11 @@ public class Seven {
         System.out.println("Normal    : "+list);
         System.out.println("Squared   : "+replaceSquare(list));
 
+        System.out.println("User input : "+usrInp());
+
     }
 }
 
-// -- 25. **Swap Two Elements**
-// Swap the elements at index 1 and index 3 in an `ArrayList`.
 
 // 26. **Create ArrayList from User Input**
 // Read `n` integers from user input and store them in an `ArrayList`.
