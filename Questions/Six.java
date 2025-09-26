@@ -5,9 +5,24 @@ import java.util.Arrays;
 
 public class Six {
 
-    private static Integer remove;
+    //problem number 24
+    public static int secondLargest(ArrayList<Integer> list){
 
-    // problem number 23
+        int largest = list.get(0);
+        int seclarge = list.get(0);
+
+        for (Integer integer : list) {
+            if (largest <= integer) {
+                seclarge = largest;
+                largest = integer;
+            }
+        }
+
+
+        return seclarge;
+    }
+
+    // problem number 22
     public static int countOccurance(ArrayList<Integer> list, int element) {
         int count = 0;
         for (Integer integer : list) {
@@ -19,6 +34,7 @@ public class Six {
         return count;
     }
 
+    //problem number 23
     public static ArrayList<Integer> removeAllOcurrance(ArrayList<Integer> list, int element) {
 
         ArrayList<Integer> clearList = new ArrayList<>(list);
@@ -30,6 +46,7 @@ public class Six {
         return clearList;
     }
 
+    //problem number 21
     public static ArrayList<Integer> allIndices(ArrayList<Integer> list, int element) {
         ArrayList<Integer> indices = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
@@ -49,6 +66,7 @@ public class Six {
         numbers = removeAllOcurrance(numbers, 15);
         System.out.println("After : " + numbers);
 
+        //problem number 25
         System.out.println("Before swapping  : " + numbers);
         int temp = numbers.get(1);
         numbers.set(1, numbers.get(3));
@@ -56,6 +74,9 @@ public class Six {
         System.out.println("After swapping   : " + numbers);
 
         System.out.println("All indices of element 67 : " + allIndices(numbers, 67));
+
+        System.out.println("List : "+numbers);
+        System.out.println("Second Largest number : "+secondLargest(numbers));
     }
 }
 
@@ -67,6 +88,9 @@ public class Six {
 
 // 23. **Remove All Occurrences of a Value**
 // Remove **all** occurrences of a specific value from an `ArrayList`.
+
+// 24. **Find Second Largest Number**
+//     Find the second largest element in an `ArrayList` of integers.
 
 // 25. **Swap Two Elements**
 // Swap the elements at index 1 and index 3 in an `ArrayList`.
