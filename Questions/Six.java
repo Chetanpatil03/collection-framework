@@ -15,6 +15,8 @@ public class Six {
             if (largest <= integer) {
                 seclarge = largest;
                 largest = integer;
+            } else if (seclarge < integer && integer < largest) {
+                seclarge = integer;
             }
         }
 
