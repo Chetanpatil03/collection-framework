@@ -74,7 +74,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 
 ### ✅ **ArrayList Problems (21–40)**
 
-21. **Find All Occurrences of an Element**
+-- 21. **Find All Occurrences of an Element**
     Find and print all indices where a specific element occurs in an `ArrayList`.
 
 -- 22. **Count Occurrences of an Element**
@@ -83,25 +83,25 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 -- 23. **Remove All Occurrences of a Value**
     Remove **all** occurrences of a specific value from an `ArrayList`.
 
-24. **Find Second Largest Number**
+-- 24. **Find Second Largest Number**
     Find the second largest element in an `ArrayList` of integers.
 
 -- 25. **Swap Two Elements**
     Swap the elements at index 1 and index 3 in an `ArrayList`.
 
-26. **Create ArrayList from User Input**
+-- 26. **Create ArrayList from User Input**
     Read `n` integers from user input and store them in an `ArrayList`.
 
 27. **Compare Two ArrayLists**
     Compare two `ArrayList`s and print the common elements.
 
-28. **Print Even Numbers Only**
+-- 28. **Print Even Numbers Only**
     From an `ArrayList` of integers, print only the even numbers.
 
-29. **Print Odd Numbers Only**
+-- 29. **Print Odd Numbers Only**
     From an `ArrayList` of integers, print only the odd numbers.
 
-30. **Replace All Elements with Square**
+-- 30. **Replace All Elements with Square**
     Replace each number in an `ArrayList` with its square.
 
 31. **Find Frequency of All Elements**
