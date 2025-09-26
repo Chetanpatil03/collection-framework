@@ -61,7 +61,7 @@ Sure! Here’s the **next 10 basic to slightly intermediate ArrayList problems**
 -- 18. **Find Maximum and Minimum Values**
     Find the max and min values in an `ArrayList` of integers.
 
-19. **Remove Duplicates**
+-- 19. **Remove Duplicates**
     Remove duplicate elements from an `ArrayList` of Strings.
 
 -- 20. **Convert Array to ArrayList**
@@ -77,16 +77,16 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 21. **Find All Occurrences of an Element**
     Find and print all indices where a specific element occurs in an `ArrayList`.
 
-22. **Count Occurrences of an Element**
+-- 22. **Count Occurrences of an Element**
     Count how many times a given element appears in an `ArrayList`.
 
-23. **Remove All Occurrences of a Value**
+-- 23. **Remove All Occurrences of a Value**
     Remove **all** occurrences of a specific value from an `ArrayList`.
 
 24. **Find Second Largest Number**
     Find the second largest element in an `ArrayList` of integers.
 
-25. **Swap Two Elements**
+-- 25. **Swap Two Elements**
     Swap the elements at index 1 and index 3 in an `ArrayList`.
 
 26. **Create ArrayList from User Input**
