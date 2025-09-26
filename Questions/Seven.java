@@ -25,7 +25,19 @@ public class Seven {
         }
     }
 
-   
+    public static int square(int n){
+        return n * n;
+    }
+
+    //problem number 30
+    public static ArrayList<Integer> replaceSquare(ArrayList<Integer> list){
+        for (int i = 0; i < list.size(); i++) {
+            int temp = list.get(i);
+            list.set(i, square(temp));
+        }
+
+        return list;
+    }
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
