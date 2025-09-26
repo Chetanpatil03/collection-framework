@@ -15,7 +15,17 @@ public class Seven {
         }
     }
 
- 
+    //problem number 29
+    public static void printOdd(ArrayList<Integer> list) {
+        System.out.println("Odd Numbers : ");
+        for (Integer integer : list) {
+            if (integer % 2 != 0) {
+                System.out.print(" " + integer);
+            }
+        }
+    }
+
+   
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
