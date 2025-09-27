@@ -6,6 +6,14 @@ import java.util.Scanner;
 
 public class Seven {
 
+    //problem number 27 
+    public static void commonElements(ArrayList<Integer> list, ArrayList<Integer> list2){
+        System.out.println("Common elements : ");
+        for(Integer i : list){
+            System.out.print(list2.contains(i) ? i+" " : "");
+        }
+    }
+
     //problem number 26
     public static ArrayList<Integer> usrInp() {
         ArrayList<Integer> list = new ArrayList<>();
@@ -68,7 +76,13 @@ public class Seven {
         System.out.println("Normal    : "+list);
         System.out.println("Squared   : "+replaceSquare(list));
 
-        System.out.println("User input : "+usrInp());
+        // System.out.println("User input : "+usrInp());
+
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
+        System.out.println("List 1 : "+list);
+        System.out.println("List 2 : "+list2);
+
+        commonElements(list, list2);    
 
     }
 }
