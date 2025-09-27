@@ -92,7 +92,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 -- 26. **Create ArrayList from User Input**
     Read `n` integers from user input and store them in an `ArrayList`.
 
-27. **Compare Two ArrayLists**
+-- 27. **Compare Two ArrayLists**
     Compare two `ArrayList`s and print the common elements.
 
 -- 28. **Print Even Numbers Only**
@@ -107,7 +107,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 31. **Find Frequency of All Elements**
     Print the frequency of each element in an `ArrayList` (no libraries).
 
-32. **Check if ArrayList is Palindrome**
+-- 32. **Check if ArrayList is Palindrome**
     Check whether the elements in an `ArrayList` form a palindrome.
 
 33. **Print Duplicate Elements**
@@ -116,7 +116,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 34. **Find Unique Elements**
     Print elements that appear **only once** in an `ArrayList`.
 
-35. **Sort in Descending Order**
+-- 35. **Sort in Descending Order**
     Sort an `ArrayList` of integers in **descending** order.
 
 36. **Sum of All Elements**
