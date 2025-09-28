@@ -9,12 +9,14 @@ public class Eight {
         int count = 0;
         ArrayList<Integer> list = new ArrayList<>(l);
         while (list.contains(element)) {
-            list.remove(Integer.valueOf(element));
             count++;
+            list.remove(Integer.valueOf(element));
         }
 
         return count;
     }
+
+
 
     // 31. **Find Frequency of All Elements**
     public static void frequencyAll(ArrayList<Integer> list){
@@ -23,19 +25,43 @@ public class Eight {
         }
     }
 
+    // 33. **Print Duplicate Elements**
+    public static ArrayList<Integer> duplicateElements(ArrayList<Integer> l){
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (Integer i : l) {
+            if (countFrequency(list, i) >= 2) {
+                list.add(i);
+            }
+        }
+
+        return list;
+    }
+
+
+
+
+
     public static void main(String[] args) {
         //problem number 35
 
         ArrayList<Integer> list = new ArrayList<>();
 
         list.addAll(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
-
+        
         //problem number 35
         System.out.println("Before    : "+list);
         list.sort((a,b) -> b - a);
         System.out.println("After   : "+list);
-
+        
         frequencyAll(list);
+        
+        list.addAll(Arrays.asList(3,7,8,10));
+        System.out.println("list : "+list);
+        frequencyAll(list);
+        System.out.println("Duplicates elements : "+duplicateElements(list));
+        
 
     }
 }
