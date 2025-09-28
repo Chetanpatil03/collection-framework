@@ -39,6 +39,21 @@ public class Eight {
         return list;
     }
 
+    //34. **Find Unique Elements**
+
+    public static void uniqueElement(ArrayList<Integer> l){
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (Integer i : l) {
+            if (countFrequency(list, i) == 1) {
+                list.add(i);
+            }
+        }
+
+        System.out.println("Unique : "+list);
+    }
+
 
 
 
@@ -61,6 +76,8 @@ public class Eight {
         System.out.println("list : "+list);
         frequencyAll(list);
         System.out.println("Duplicates elements : "+duplicateElements(list));
+
+        uniqueElement(list);
         
 
     }
