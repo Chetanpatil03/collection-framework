@@ -4,6 +4,25 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Eight {
+
+    public static int countFrequency(ArrayList<Integer> l,int element){
+        int count = 0;
+        ArrayList<Integer> list = new ArrayList<>(l);
+        while (list.contains(element)) {
+            list.remove(Integer.valueOf(element));
+            count++;
+        }
+
+        return count;
+    }
+
+    // 31. **Find Frequency of All Elements**
+    public static void frequencyAll(ArrayList<Integer> list){
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("Frequency of "+list.get(i)+" : "+countFrequency(list, list.get(i)));
+        }
+    }
+
     public static void main(String[] args) {
         //problem number 35
 
@@ -15,6 +34,8 @@ public class Eight {
         System.out.println("Before    : "+list);
         list.sort((a,b) -> b - a);
         System.out.println("After   : "+list);
+
+        frequencyAll(list);
 
     }
 }
