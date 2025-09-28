@@ -104,16 +104,16 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 -- 30. **Replace All Elements with Square**
     Replace each number in an `ArrayList` with its square.
 
-31. **Find Frequency of All Elements**
+-- 31. **Find Frequency of All Elements**
     Print the frequency of each element in an `ArrayList` (no libraries).
 
 -- 32. **Check if ArrayList is Palindrome**
     Check whether the elements in an `ArrayList` form a palindrome.
 
-33. **Print Duplicate Elements**
+-- 33. **Print Duplicate Elements**
     Print only the elements that appear more than once in an `ArrayList`.
 
-34. **Find Unique Elements**
+-- 34. **Find Unique Elements**
     Print elements that appear **only once** in an `ArrayList`.
 
 -- 35. **Sort in Descending Order**
