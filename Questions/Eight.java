@@ -2,6 +2,9 @@ package Questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Eight {
 
@@ -43,15 +46,8 @@ public class Eight {
 
     public static void uniqueElement(ArrayList<Integer> l){
 
-        ArrayList<Integer> list = new ArrayList<>();
-
-        for (Integer i : l) {
-            if (countFrequency(list, i) == 1) {
-                list.add(i);
-            }
-        }
-
-        System.out.println("Unique : "+list);
+        ArrayList<Integer> uniqueElement = (ArrayList) l.stream().distinct().collect(Collectors.toList());
+        System.out.println("Unique elements : "+uniqueElement);
     }
 
 
@@ -78,6 +74,7 @@ public class Eight {
         System.out.println("Duplicates elements : "+duplicateElements(list));
 
         uniqueElement(list);
+        
         
 
     }
