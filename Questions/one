@@ -119,7 +119,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 -- 35. **Sort in Descending Order**
     Sort an `ArrayList` of integers in **descending** order.
 
-36. **Sum of All Elements**
+-- 36. **Sum of All Elements**
     Calculate and print the sum of all numbers in an `ArrayList`.
 
 37. **Find Common Elements in Three Lists**
