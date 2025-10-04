@@ -122,7 +122,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 -- 36. **Sum of All Elements**
     Calculate and print the sum of all numbers in an `ArrayList`.
 
-37. **Find Common Elements in Three Lists**
+-- 37. **Find Common Elements in Three Lists**
     Given three `ArrayList`s, print the elements common to all three.
 
 38. **Remove Null Values**
@@ -131,7 +131,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 -- 39. **Reverse Without Built-in Function**
     Reverse the `ArrayList` manually (without using `Collections.reverse()`).
 
-40. **Find Longest String**
+-- 40. **Find Longest String**
     From an `ArrayList` of Strings, find the one with the maximum length.
 
 ---

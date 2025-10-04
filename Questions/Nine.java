@@ -39,6 +39,17 @@ public class Nine {
         return list;
     }
 
+    public static String longestString(ArrayList<String> list){
+        String temp = list.get(0);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).length() > temp.length()) {
+                temp = list.get(i);
+            }
+        }
+
+        return temp;
+    }
+
     public static void main(String[] args) {
         System.out.println("Sum : "+sum(new ArrayList<>(Arrays.asList(12,25,7,5,96,799,656,56,75))));
 
@@ -48,6 +59,10 @@ public class Nine {
         ArrayList<Integer> common = commonEle(Arrays.asList(15,67,9,695,3466,25), 
         Arrays.asList(15,27,96,25,97,65),Arrays.asList(15,27,67,25));
         System.out.println("Common between Three lists : "+common);
+
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("Chetan","Chudaman","Bachchhav"));
+        System.out.println("List elements : "+list);
+        System.out.println("Longest string : "+longestString(list));
     }
 
 // 36. **Sum of All Elements**
