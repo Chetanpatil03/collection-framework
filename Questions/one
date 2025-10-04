@@ -128,7 +128,7 @@ Great! Here's the next set of **20 ArrayList problems (21–40)** – continuing
 38. **Remove Null Values**
     Remove all `null` values from an `ArrayList`.
 
-39. **Reverse Without Built-in Function**
+-- 39. **Reverse Without Built-in Function**
     Reverse the `ArrayList` manually (without using `Collections.reverse()`).
 
 40. **Find Longest String**
