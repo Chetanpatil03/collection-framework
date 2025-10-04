@@ -11,6 +11,16 @@ public class Nine {
         return sum;
     }
 
+    //39 
+    public ArrayList<Integer> reverseList(ArrayList<Integer> list){
+        int n = list.size();
+        for (int i = 0; i < n/2; i++) {
+            int temp = list.get(i);
+            list.set(i, list.get(n-1-i));
+            list.set(, null)
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Sum : "+sum(new ArrayList<>(Arrays.asList(12,25,7,5,96,799,656,56,75))));
     }
