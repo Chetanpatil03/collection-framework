@@ -3,6 +3,8 @@ import java.util.Arrays;
 
 public class Ten {
 
+    
+
     public static int countEven(ArrayList<Integer> list){
         int count = 0;
         for (Integer i : list) {
