@@ -1,4 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Vector;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Vector_demo {
     public static void main(String[] args) {
@@ -21,15 +25,28 @@ public class Vector_demo {
         // two.add(10);
         // System.out.println(two.capacity()); // 2x the intial size.
 
-        Vector<Integer> two = new Vector<>(5,2);
-        two.add(10);
-        two.add(10);
-        two.add(10);
-        two.add(10);
-        two.add(10);
-        System.out.println(two.capacity());
-        two.add(10);
-        System.out.println(two.capacity()); // size will be incremented by two only
+        // Vector<Integer> two = new Vector<>(5,2);
+        // two.add(10);
+        // two.add(10);
+        // two.add(10);
+        // two.add(10);
+        // two.add(10);
+        // System.out.println(two.capacity());
+        // two.add(10);
+        // System.out.println(two.capacity()); // size will be incremented by two only
+
+        Vector<Integer> three = new Vector<>(Arrays.asList(2,82,68,26,14));
+        System.out.println(three);
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(14);
+        list.add(9);
+        list.add(16);
+        list.add(19);
+
+        list.sort(null);
+        Vector<Integer> four = new Vector<>(list);
+        System.out.println(four);
     }
 
     // vector was introduced in jdk 1 before the collection framewoks
