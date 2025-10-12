@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class Stack_demo {
@@ -21,7 +22,18 @@ public class Stack_demo {
         System.out.println(stack);
 
         // we can also implement this by LinkedList class
-        Link
+        LinkedList<Integer> linkedList = new LinkedList<>();
+        linkedList.addLast(10);
+        linkedList.addLast(20); //push at top > 
+        linkedList.addLast(30);
+        linkedList.addLast(40);
+
+        System.out.println(linkedList.getLast()); //peek
+        linkedList.removeLast();// pop 
+
+        // when to which 
+        // LinkedList -->> when there is not need of sysnchronization and the environment is single threaded
+        // Stack -->> when there is need of sysnchronization and the environment is multi threaded
 
     }
 
