@@ -44,4 +44,8 @@ public class CopyOnArraylist_demo_2 {
         readerThread.start();
         writertThread.start();
     }
+
+
+    //when the reader thread is reading we can not modify the old list in java
+    // but when we are using CopyOnWriteArrayList is creates a copy of list and replaced when reading operations is done
 }
