@@ -1,6 +1,35 @@
+import java.util.Vector;
+
 public class Vector_demo {
     public static void main(String[] args) {
-        
+        // ways to create vectors in java
+
+        // Vector<Integer> one = new Vector<>();
+        // one.add(14);
+        // one.add(14);
+        // one.add(14);
+        // one.add(14);
+        // System.out.println(one);
+
+        // Vector<Integer> two = new Vector<>(5);
+        // two.add(10);
+        // two.add(10);
+        // two.add(10);
+        // two.add(10);
+        // two.add(10);
+        // System.out.println(two.capacity());
+        // two.add(10);
+        // System.out.println(two.capacity()); // 2x the intial size.
+
+        Vector<Integer> two = new Vector<>(5,2);
+        two.add(10);
+        two.add(10);
+        two.add(10);
+        two.add(10);
+        two.add(10);
+        System.out.println(two.capacity());
+        two.add(10);
+        System.out.println(two.capacity()); // size will be incremented by two only
     }
 
     // vector was introduced in jdk 1 before the collection framewoks
