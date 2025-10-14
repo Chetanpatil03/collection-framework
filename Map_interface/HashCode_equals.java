@@ -1,5 +1,6 @@
 package Map_interface;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class HashCode_equals {
     public static void main(String[] args) {
@@ -21,8 +22,13 @@ public class HashCode_equals {
         map.put(p2, "Designer");  //hashcode ---> index
         map.put(p3, "Manager");   //hashcode ---> index -- differ from p1
 
+        System.out.println("Hashmap size : "+map.size());
+        System.out.println("Value of p1 : "+map.get(p1));
+        System.out.println("Value of p3 : "+map.get(p3));
         // solution for this is overriding the hashcode and equals method
         
+
+
 
     }
 }
@@ -40,5 +46,31 @@ class Person{
     }
     public String getName() {
         return name;
+    }
+
+    // @Override
+    // // public boolean equals(Object obj) {
+    //     if (this == obj) {
+    //         return true;
+    //     }
+    //     if (obj == null) {
+    //         return false;
+    //     }
+
+    //     if(getClass() == obj.getClass()){
+    //         return true;
+    //     }
+    //     Person other = (Person) obj;
+    //     return other.getId() == id && Objects.equals(name,other.getName());
+    // }
+
+    // // @Override
+    // // public int hashCode() {
+    //     return Objects.hash(name,id);
+    // }
+
+    @Override
+    public String toString() {
+        return "id : "+id + ", Name : "+name;
     }
 }
