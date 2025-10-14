@@ -18,18 +18,20 @@ public class HashCode_equals {
 
         // adding to hashmap
  
-        map.put(p1, "Engineer");  //hashcode1 ---> index1 -- differ from p3
-        map.put(p2, "Designer");  //hashcode2 ---> index2
-        map.put(p3, "Manager");   //hashcode3 ---> index3 -- differ from p1
+        // map.put(p1, "Engineer");  //hashcode1 ---> index1 -- differ from p3
+        // map.put(p2, "Designer");  //hashcode2 ---> index2
+        // map.put(p3, "Manager");   //hashcode3 ---> index3 -- differ from p1
 
+        // solution for this is overriding the hashcode and equals method
+        
+        
+        map.put(p1, "Engineer");  //hashcode1 ---> index1
+        map.put(p2, "Designer");  //hashcode2 ---> index2
+        map.put(p3, "Manager");   //hashcode1 ---> index1 -- same to one
+        
         System.out.println("Hashmap size : "+map.size()); 
         System.out.println("Value of p1 : "+map.get(p1)); //hashcode1 --> index1
-        System.out.println("Value of p3 : "+map.get(p3)); //hashcode1 --> index1
-        // solution for this is overriding the hashcode and equals method
-
-
-
-
+        System.out.println("Value of p3 : "+map.get(p3)); //hashcode1 --> index1 
 
     }
 }
