@@ -1,3 +1,4 @@
+package Map_interface;
 import java.util.HashMap;
 
 public class HashCode_equals {
@@ -13,6 +14,11 @@ public class HashCode_equals {
         map.put(p1, "Engineer");  //hashcode ---> index -- differ from p3
         map.put(p2, "Designer");  //hashcode ---> index
         map.put(p3, "Manager");   //hashcode ---> index -- differ from p1
+
+        HashMap<String,Integer > studentMap = new HashMap<>();
+        studentMap.put("Chetan", 90); //hashcode 1 --> index 1
+        studentMap.put("Prafulla", 80); //hashcode 2 --> index 2
+        studentMap.put("Chetan", 90); //hashcode 1 --> index 1 -->equals --> replace value
     }
 }
 
