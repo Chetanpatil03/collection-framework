@@ -37,6 +37,8 @@ public class Hashmap {
 
         System.out.println(map);
 
+        System.out.println("Hashmap");
+
 
 
     }
