@@ -18,15 +18,16 @@ public class HashCode_equals {
 
         // adding to hashmap
  
-        map.put(p1, "Engineer");  //hashcode ---> index -- differ from p3
-        map.put(p2, "Designer");  //hashcode ---> index
-        map.put(p3, "Manager");   //hashcode ---> index -- differ from p1
+        map.put(p1, "Engineer");  //hashcode1 ---> index1 -- differ from p3
+        map.put(p2, "Designer");  //hashcode2 ---> index2
+        map.put(p3, "Manager");   //hashcode3 ---> index3 -- differ from p1
 
-        System.out.println("Hashmap size : "+map.size());
-        System.out.println("Value of p1 : "+map.get(p1));
-        System.out.println("Value of p3 : "+map.get(p3));
+        System.out.println("Hashmap size : "+map.size()); 
+        System.out.println("Value of p1 : "+map.get(p1)); //hashcode1 --> index1
+        System.out.println("Value of p3 : "+map.get(p3)); //hashcode1 --> index1
         // solution for this is overriding the hashcode and equals method
-        
+
+
 
 
 
@@ -48,26 +49,26 @@ class Person{
         return name;
     }
 
-    // @Override
-    // // public boolean equals(Object obj) {
-    //     if (this == obj) {
-    //         return true;
-    //     }
-    //     if (obj == null) {
-    //         return false;
-    //     }
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
 
-    //     if(getClass() == obj.getClass()){
-    //         return true;
-    //     }
-    //     Person other = (Person) obj;
-    //     return other.getId() == id && Objects.equals(name,other.getName());
-    // }
+        if(getClass() == obj.getClass()){
+            return true;
+        }
+        Person other = (Person) obj;
+        return other.getId() == id && Objects.equals(name,other.getName());
+    }
 
-    // // @Override
-    // // public int hashCode() {
-    //     return Objects.hash(name,id);
-    // }
+    @Override
+    public int hashCode() {
+        return Objects.hash(name,id);
+    }
 
     @Override
     public String toString() {
