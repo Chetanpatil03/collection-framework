@@ -1,6 +1,8 @@
 package Map_interface;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class Hashmap {
     public static void main(String[] args) {
@@ -20,6 +22,20 @@ public class Hashmap {
 
         System.out.println(map.get(null));
         System.out.println(map.get(3));
+
+        System.out.println(map.containsKey(3));
+        System.out.println(map.containsValue("Chetan"));
+
+        for (Object o : map.keySet()) { //int i : map.keySet()
+            System.out.println(map.get(o));
+        }
+
+        Set<Entry<Integer, String>> entrySet = map.entrySet();
+        for (Entry<Integer,String> entry : entrySet) {
+            entry.setValue(entry.getValue().toUpperCase());
+        }
+
+        System.out.println(map);
 
 
 
