@@ -9,6 +9,8 @@ public class WeakReferences_demo {
 
         System.out.println(weakReferences.get());
 
+        // but we can suggest the jvm to clear the memory cause it is weak reference and it will assign as null
+        System.gc();
         try{
             Thread.sleep(1000);
         }
