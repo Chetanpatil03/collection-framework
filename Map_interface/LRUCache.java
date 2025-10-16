@@ -10,10 +10,6 @@ public class LRUCache<K,V> extends LinkedHashMap<K,V>{
         this.capacity = capacity;
     }
 
-    
-
-
-
     @Override
     protected boolean removeEldestEntry(java.util.Map.Entry<K, V> eldest) {
         return size() > capacity;
