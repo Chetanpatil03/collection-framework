@@ -3,6 +3,8 @@ package Map;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import java.util.Map.Entry;
+
 public class KeyValue {
 
     static HashMap<Integer,String> students = new HashMap<>();
@@ -16,6 +18,23 @@ public class KeyValue {
         }
         else{
             System.out.println("Details not found....");
+        }
+    }
+
+    public static void deleteStudent(int id){
+        if (students.containsKey(id)) {
+            System.out.println("Removed student : "+students.get(id));
+            students.remove(id);   
+        }
+        else{
+            System.out.println("Student not found...");
+        }
+    }
+
+    public static void listStudents(){
+        System.out.println("All students");
+        for (Entry<Integer, String> entry : students.entrySet()) {
+            System.out.println("ID : "+entry.getKey() + ", Name : "+entry.getValue());
         }
     }
 
@@ -41,7 +60,15 @@ public class KeyValue {
                     viewStudentDetails(id);
                     break;
                 
-                case
+                case 3:
+                    System.out.println("Enter id : ");
+                    id = sc.nextInt();
+                    deleteStudent(id);
+                    break;
+                
+                case 4:
+                    
+
                 default:
                     break;
             }
