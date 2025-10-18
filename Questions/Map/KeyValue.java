@@ -41,15 +41,16 @@ public class KeyValue {
     public static void main(String[] args) {
         System.out.println("**** Welcome **********");
         Scanner sc = new Scanner(System.in);
-        int ch,id;
+        int ch = 0,id;
         String name;
-        while (true) {
+        while (ch != 5) {
             System.out.println("1.Add student 2.View Students 3.Delete Students 4.List students 5.Exit");
             ch = sc.nextInt();
             switch (ch) {
                 case 1:
                     System.out.print("Enter Id : ");
                     id = sc.nextInt();
+                    sc.nextLine();
                     System.out.print("Enter Name : ");
                     name = sc.nextLine();
                     addStudent(id, name);
@@ -57,6 +58,7 @@ public class KeyValue {
                 case 2:
                     System.out.println("Enter id : ");
                     id = sc.nextInt();
+
                     viewStudentDetails(id);
                     break;
                 
@@ -67,9 +69,13 @@ public class KeyValue {
                     break;
                 
                 case 4:
-                    
-
+                    listStudents();
+                    break;
+                case 5:
+                    System.out.println("Thankyou");
+                    break;
                 default:
+                    System.out.println("Enter valid choice");
                     break;
             }
         }
