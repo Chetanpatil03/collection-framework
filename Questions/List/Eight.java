@@ -9,6 +9,20 @@ import java.util.stream.Collectors;
 
 public class Eight {
 
+    public static boolean isPallindrom(ArrayList<Integer> l){
+        StringBuffer stringBuffer = new StringBuffer();
+        for (Integer integer : l) {
+            stringBuffer.append(String.valueOf(integer));
+        }
+
+        if (stringBuffer == stringBuffer.reverse()) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     public static int countFrequency(ArrayList<Integer> l, int element) {
         int count = 0;
         ArrayList<Integer> list = new ArrayList<>(l);
