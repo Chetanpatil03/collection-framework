@@ -71,7 +71,7 @@ public class Nine {
 
         ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(null,2,9,6,null,69,null,66));
         System.out.println("Without removing null values : "+arrayList);
-        System.out.println("After removing : "+removeNull(arrayList));
+        System.out.println("After removing null values: "+removeNull(arrayList));
 
     }
 
