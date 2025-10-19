@@ -83,6 +83,9 @@ public class Eight {
         uniqueElement(list);
         System.out.println("Duplicate elements : "+duplicateElements(list));
 
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(1,2,1));
+        System.out.println(isPallindrom(arrayList)? "The list "+arrayList+"is pallindrom" : "The list "+arrayList+"is not pallindrom");
+
     }
 }
 
