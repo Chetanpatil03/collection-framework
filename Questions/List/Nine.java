@@ -12,6 +12,7 @@ public class Nine {
         return sum;
     }
 
+    // 38. removing null values
     public static ArrayList<Integer> removeNull(ArrayList<Integer> list){
         list.removeIf(x-> x == null);
         return list;
@@ -43,7 +44,7 @@ public class Nine {
 
         return list;
     }
-
+    // 40
     public static String longestString(ArrayList<String> list){
         String temp = list.get(0);
         for (int i = 0; i < list.size(); i++) {
