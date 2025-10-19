@@ -12,6 +12,11 @@ public class Nine {
         return sum;
     }
 
+    public static ArrayList<Integer> removeNull(ArrayList<Integer> list){
+        list.removeIf(x-> x == null);
+        return list;
+    }
+
     public static ArrayList<Integer> commonEle(List<Integer> list1,List<Integer> list2,List<Integer> list3){
         ArrayList<Integer> commonElements = new ArrayList<>();
         for (Integer i : list1) {
@@ -63,6 +68,11 @@ public class Nine {
         ArrayList<String> list = new ArrayList<>(Arrays.asList("Chetan","Chudaman","Bachchhav"));
         System.out.println("List elements : "+list);
         System.out.println("Longest string : "+longestString(list));
+
+        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(null,2,9,6,null,69,null,66));
+        System.out.println("Without removing null values : "+arrayList);
+        System.out.println("After removing : "+removeNull(arrayList));
+
     }
 
 // 36. **Sum of All Elements**
