@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Nine {
 
-    3
+    // 37   
     public static ArrayList<Integer> commonElements(ArrayList<Integer> a,ArrayList<Integer> b,ArrayList<Integer> c){
         ArrayList<Integer> commList = new ArrayList<>();
         for (Integer i : a) {
