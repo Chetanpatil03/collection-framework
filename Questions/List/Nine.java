@@ -6,6 +6,24 @@ import java.util.List;
 
 public class Nine {
 
+    3
+    public static ArrayList<Integer> commonElements(ArrayList<Integer> a,ArrayList<Integer> b,ArrayList<Integer> c){
+        ArrayList<Integer> commList = new ArrayList<>();
+        for (Integer i : a) {
+            for (Integer j : c) {
+                if (i==j) {
+                    for (Integer k : c) {
+                        if (j == k) {
+                            commList.add(i);
+                        }
+                    }
+                }
+            }
+        }
+
+        return commList;
+    }
+
     // 36. **Sum of All Elements**
     public static int sum(ArrayList<Integer> list){
         int sum = list.stream().reduce(0, (a,b) -> a+b);
