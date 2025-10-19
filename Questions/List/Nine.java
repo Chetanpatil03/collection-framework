@@ -92,6 +92,7 @@ public class Nine {
         System.out.println("Without removing null values : "+arrayList);
         System.out.println("After removing null values: "+removeNull(arrayList));
 
+        System.out.println(commonElements(arrayList, arrayList, common));
     }
 
 // 36. **Sum of All Elements**
