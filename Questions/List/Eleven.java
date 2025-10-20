@@ -1,6 +1,19 @@
 package List;
 
+import java.util.ArrayList;
+
 public class Eleven {
+
+    public static ArrayList<Integer> evenIndices(ArrayList<Integer> list){
+        ArrayList<Integer> evenList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (i%2 == 0 || i==0) {
+                evenList.add(list.get(i));
+            }
+        }
+
+        return evenList;
+    }
     public static void main(String[] args) {
         System.out.println("Chetan Bachchhav");
     }
