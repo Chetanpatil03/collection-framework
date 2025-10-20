@@ -3,7 +3,7 @@ package List;
 import java.util.ArrayList;
 
 public class Eleven {
-
+//  47 :: finding element that are on even indices
     public static ArrayList<Integer> evenIndices(ArrayList<Integer> list){
         ArrayList<Integer> evenList = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
