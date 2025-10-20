@@ -142,13 +142,13 @@ Awesome! Here's the next set of **ArrayList problems (41–60)** — these are s
 
 ### ✅ **ArrayList Problems (41–60)**
 
-41. **Find the First Repeating Element**
+-- 41. **Find the First Repeating Element**
     Find the first element that appears more than once in an `ArrayList`.
 
-42. **Find the First Non-Repeating Element**
+-- 42. **Find the First Non-Repeating Element**
     Find the first element that appears only once in an `ArrayList`.
 
-43. **Count Even and Odd Numbers**
+-- 43. **Count Even and Odd Numbers**
     Count how many even and odd numbers are present in an `ArrayList`.
 
 44. **Move All Zeroes to End**
