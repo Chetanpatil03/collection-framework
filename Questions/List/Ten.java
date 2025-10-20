@@ -26,7 +26,7 @@ public class Ten {
         }
         return count;
     }
-
+    // 41
     public static Integer firstRepeated(ArrayList<Integer> list) {
 
         for (int i = 0; i < list.size(); i++) {
@@ -38,7 +38,7 @@ public class Ten {
         }
         return null;
     }
-
+//  42
     public static Integer firstNonRepeated(ArrayList<Integer> list) {
 
         for (int i = 0; i < list.size(); i++) {
@@ -57,6 +57,8 @@ public class Ten {
 
         System.out.println("Even Numbers : " + countEven(list));
         System.out.println("Odd Numbers : " + countOdd(list));
+
+        System.out.println("First repeated element : "+firstRepeated(list));
     }
 }
 
