@@ -14,6 +14,6 @@ This repo is created for **my own learning and hands-on practice** with Java Col
 
 ---
 
-**Author:** 
-Chetan Patil
+**Author:** <br>
+Chetan Patil <br>
 bachchhavchetan45@gmail.com
