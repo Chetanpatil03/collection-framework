@@ -10,7 +10,7 @@ It includes examples of different collection classes like **List**, **Map**, and
 - **Map_interface/** – Programs on HashMap, LinkedHashMap, WeakHashMap, etc.  
 - **Questions/** – Practice questions for List and Map.  
 
--
+--
 
 ## 🎯 Purpose
 This repo is created for **my own learning and hands-on practice** with Java Collections.
