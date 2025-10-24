@@ -19,11 +19,11 @@ public class Eleven {
         ArrayList<Integer> oddList = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             if (i%2 == 1) {
-                evenList.add(list.get(i));
+                oddList.add(list.get(i));
             }
         }
 
-        return evenList;
+        return oddList;
     }
 
     public static void main(String[] args) {
