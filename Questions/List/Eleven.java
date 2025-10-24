@@ -14,6 +14,18 @@ public class Eleven {
 
         return evenList;
     }
+// 47[b] :: oddIndices
+    public static ArrayList<Integer> oddIndices(ArrayList<Integer> list){
+        ArrayList<Integer> oddList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (i%2 == 1) {
+                evenList.add(list.get(i));
+            }
+        }
+
+        return evenList;
+    }
+
     public static void main(String[] args) {
         System.out.println("Chetan Bachchhav");
     }
