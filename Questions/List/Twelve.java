@@ -7,7 +7,7 @@ public class Twelve {
 
     // * 51. **Partition into Even and Odd Lists**
     public static ArrayList<Integer> splitList(ArrayList<Integer> ls){
-        ArrayList<Integer> arrayList = new ArrayList<>(ls.size());
+        ArrayList<Integer> arrayList = new ArrayList<>();
         int n = ls.size()/2 -1;
         for (Integer i : ls) {
             if (i % 2 == 0) {
@@ -63,6 +63,8 @@ public class Twelve {
         System.out.println("Cleaned list : "+cleanList(arrayList, 77));
 
         System.out.println("Negative element handled :: "+negativeHandledList(arrayList));
+
+        System.out.println("Splitted List :: "+splitList(arrayList));
     }
 }
 
