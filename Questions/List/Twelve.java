@@ -1,13 +1,29 @@
 package List;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Twelve {
 
+
+    
+    // 52. **Remove Elements Greater Than X**
     public static ArrayList<Integer> cleanList(ArrayList<Integer> ls,int a){
-        for (Integer i : ls) {
+        ArrayList<Integer> cleanList = ls;
+        for (Integer i : cleanList) {
             if (i > a) {
                 ls.remove(i);
+            }
+        }
+        
+        return cleanList;
+    }
+    
+    // 53. **Replace Negative Numbers with Zero**
+    public static ArrayList<Integer> negativeHandledList(ArrayList<Integer> ls){
+        for (Integer i : ls) {
+            if (i < 0) {
+                ls.set(ls.indexOf(Integer.valueOf(i)), 0);
             }
         }
 
@@ -16,7 +32,12 @@ public class Twelve {
 
     
     public static void main(String[] args) {
-        System.out.println("hello world!");
+        ArrayList<Integer> arrayList = new ArrayList<>();
+
+        arrayList.addAll(Arrays.asList(7,77,29,-25,5,0,-7,-67,25,957,695,35,14,45,50,94));
+
+        System.out.println("orignal : "+arrayList);
+        System.out.println("Cleaned list : "+cleanList(arrayList, 77));
     }
 }
 
