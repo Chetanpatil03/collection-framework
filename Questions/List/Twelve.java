@@ -7,19 +7,19 @@ public class Twelve {
 
     // * 51. **Partition into Even and Odd Lists**
     public static ArrayList<Integer> splitList(ArrayList<Integer> ls){
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        int n = ls.size()/2 -1;
+        ArrayList<Integer> evens = new ArrayList<>();
+        ArrayList<Integer> odds = new ArrayList<>();
         for (Integer i : ls) {
             if (i % 2 == 0) {
-                arrayList.addFirst(i);
-            }
-            else{
-                arrayList.add(n, i);
-                n++;
+                evens.add(i);
+            } else {
+                odds.add(i);
             }
         }
-
-        return arrayList;
+        ArrayList<Integer> result = new ArrayList<>();
+        result.addAll(evens);
+        result.addAll(odds);
+        return result;
     }
     
     // 52. **Remove Elements Greater Than X**
