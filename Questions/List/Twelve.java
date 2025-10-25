@@ -5,7 +5,22 @@ import java.util.Arrays;
 
 public class Twelve {
 
+    // * 51. **Partition into Even and Odd Lists**
+    public static ArrayList<Integer> splitList(ArrayList<Integer> ls){
+        ArrayList<Integer> arrayList = new ArrayList<>(ls.size());
+        int n = ls.size()/2 -1;
+        for (Integer i : ls) {
+            if (i % 2 == 0) {
+                arrayList.addFirst(i);
+            }
+            else{
+                arrayList.add(n, i);
+                n++;
+            }
+        }
 
+        return arrayList;
+    }
     
     // 52. **Remove Elements Greater Than X**
     public static ArrayList<Integer> cleanList(ArrayList<Integer> ls,int a){
