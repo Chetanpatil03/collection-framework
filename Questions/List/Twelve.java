@@ -24,9 +24,14 @@ public class Twelve {
     
     // 53. **Replace Negative Numbers with Zero**
     public static ArrayList<Integer> negativeHandledList(ArrayList<Integer> ls){
+        ArrayList<Integer> cleanList = new ArrayList<>();
+
         for (Integer i : ls) {
             if (i < 0) {
-                ls.set(ls.indexOf(Integer.valueOf(i)), 0);
+                cleanList.add(0);
+            }
+            else{
+                cleanList.add(i);
             }
         }
 
