@@ -9,10 +9,13 @@ public class Twelve {
     
     // 52. **Remove Elements Greater Than X**
     public static ArrayList<Integer> cleanList(ArrayList<Integer> ls,int a){
-        ArrayList<Integer> cleanList = ls;
-        for (Integer i : cleanList) {
+        ArrayList<Integer> cleanList = new ArrayList<>();
+        for (Integer i : ls) {
             if (i > a) {
-                ls.remove(i);
+                continue;
+            }
+            else{
+                cleanList.add(i);
             }
         }
         
