@@ -35,7 +35,7 @@ public class Twelve {
             }
         }
 
-        return ls;
+        return cleanList;
     }
 
     
@@ -46,6 +46,8 @@ public class Twelve {
 
         System.out.println("orignal : "+arrayList);
         System.out.println("Cleaned list : "+cleanList(arrayList, 77));
+
+        System.out.println("Negative element handled :: "+negativeHandledList(arrayList));
     }
 }
 
