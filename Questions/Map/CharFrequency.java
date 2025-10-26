@@ -1,6 +1,5 @@
 //Counting Character Occurrences in a String
 //Classic use case for interviews.
-
 import java.util.*;
 
 public class CharFrequency {
