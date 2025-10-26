@@ -1,7 +1,5 @@
 //🧍 4. Representing Real-World Data (e.g., Employee ID → Salary)
-
 //You can map relationships between entities easily.
-
 import java.util.*;
 
 public class EmployeeData {
