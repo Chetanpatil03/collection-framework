@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class One {
@@ -21,8 +22,22 @@ public class One {
                 continue;
             }
         }
-
         return list;
+    }
+
+    public static HashMap<String,Integer> countFrequency(ArrayList<String> list){
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        
+        for(String string : list){
+            if (hashMap.containsKey(string)) {
+                hashMap.replace(string, hashMap.get(string)+1);
+            }else{
+                hashMap.put(string, 1);
+            }
+        }
+
+
+        return hashMap;
     }
 
     public static void main(String[] args) {
