@@ -6,18 +6,18 @@ public class One {
     public static ArrayList<String> usrInput(Scanner sc){
         ArrayList<String> list = new ArrayList<>();
         System.out.println("Enter elements :: ");
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
 
         while (true) {
             System.out.print(" :: ");
             list.add(sc.nextLine());
-            System.out.println("Want to continue [Y/N] ::  ");
+            System.out.print("Want to continue [Y/N] ::  ");
             char d = sc.nextLine().toCharArray()[0];
             if ( d == 'N' || d == 'n') {
                 break;
             }
             else{
-                System.out.println();
+                // System.out.println();
                 continue;
             }
         }
@@ -26,6 +26,9 @@ public class One {
     }
 
     public static void main(String[] args) {
-        
+        Scanner sc = new Scanner(System.in);
+        ArrayList<String> list = usrInput(sc);
+
+        System.out.println("List :: "+list);
     }
 }
