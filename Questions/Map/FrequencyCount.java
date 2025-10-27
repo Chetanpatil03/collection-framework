@@ -1,5 +1,4 @@
 //🧩 1. Counting Frequency of Elements
-
 //Use HashMap to count how many times each element appears in a list or string.
 
 import java.util.*;
