@@ -45,5 +45,7 @@ public class One {
         ArrayList<String> list = usrInput(sc);
 
         System.out.println("List :: "+list);
+
+        System.out.println("Frequency of every element : \n"+countFrequency(list));
     }
 }
