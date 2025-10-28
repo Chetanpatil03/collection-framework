@@ -30,11 +30,7 @@ public class One {
         // five 
         System.out.println("\nArraylist size : "+names.size());
 
-
-
-
-
-
+        System.out.println("index of chetan : "+names.indexOf("chetan"));
     }
 
 
