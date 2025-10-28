@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class One {
 
-    public static ArrayList<String> usrInput(Scanner sc){
-        ArrayList<String> list = new ArrayList<>();
+    public static ArrayList<Object> usrInput(Scanner sc){
+        ArrayList<Object> list = new ArrayList<>();
         System.out.println("Enter elements :: ");
         // int n = sc.nextInt();
 
@@ -43,6 +43,7 @@ public class One {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> list = usrInput(sc);
+
 
         System.out.println("List :: "+list);
 
