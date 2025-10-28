@@ -8,6 +8,8 @@ public class EmployeeData {
         salaryMap.put(1, 50000.0);
         salaryMap.put(2, 65000.0);
         salaryMap.put(3, 80000.0);
+        salaryMap.put(4, 80000.0);
+        salaryMap.put(5, 80000.0);
 
         for (Map.Entry<Integer, Double> e : salaryMap.entrySet()) {
             System.out.println("Employee ID: " + e.getKey() + ", Salary: " + e.getValue());
