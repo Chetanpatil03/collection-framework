@@ -42,7 +42,7 @@ public class One {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<String> list = usrInput(sc);
+        ArrayList<String> list = (ArrayList<String>) usrInput(sc);
 
 
         System.out.println("List :: "+list);
