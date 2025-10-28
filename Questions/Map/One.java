@@ -44,8 +44,17 @@ public class One {
         Scanner sc = new Scanner(System.in);
         ArrayList<String> list = usrInput(sc);
 
-        
+        ArrayList<Integer> intList = new ArrayList<>();
+        ArrayList<String> intStrList = usrInput(sc);
 
+        for (String s : intStrList) {
+            if (s == null || s.trim().isEmpty()) continue;
+            try {
+                intList.add(Integer.parseInt(s.trim()));
+            } catch (NumberFormatException e) {
+                System.out.println("Skipping non-integer input: " + s);
+            }
+        }
 
         System.out.println("List :: "+list);
 
