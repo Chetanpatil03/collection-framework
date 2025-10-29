@@ -3,6 +3,22 @@
 import java.util.*;
 
 public class EmployeeData {
+    /**
+     * Demonstrates populating and printing employee salary data.
+     *
+     * <p>This main method builds a sample HashMap<Integer, Double> that associates
+     * employee IDs with their salaries and then iterates over the map's entry set to
+     * print each mapping to standard output in the form:
+     * <pre>
+     * Employee ID: &lt;id&gt;, Salary: &lt;salary&gt;
+     * </pre>
+     *
+     * <p>Notes:
+     * - The example uses a HashMap, so insertion order is not guaranteed.
+     * - Duplicate salary values are allowed; keys (employee IDs) should be unique.
+     *
+     * @param args command-line arguments (ignored by this demonstration)
+     */
     public static void main(String[] args) {
         HashMap<Integer, Double> salaryMap = new HashMap<>();
         salaryMap.put(1, 50000.0);
