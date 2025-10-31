@@ -57,8 +57,8 @@ public class Twelve {
         ArrayList<String> updatedList = new ArrayList<>();
 
         for (String string : list) {
-            if (string.startsWith()) {
-                
+            if (!(string.startsWith("a")||string.startsWith("e")||string.startsWith("i")||string.startsWith("o")||string.startsWith("u"))) {
+                updatedList.add(string);
             }
         }
 
