@@ -53,6 +53,18 @@ public class Twelve {
         return cleanList;
     }
 
+    public static ArrayList<String> filterStrings(ArrayList<String> list){
+        ArrayList<String> updatedList = new ArrayList<>();
+
+        for (String string : list) {
+            if (string.startsWith()) {
+                
+            }
+        }
+
+        return updatedList;
+    }
+
     
     public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
