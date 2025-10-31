@@ -52,12 +52,16 @@ public class Twelve {
 
         return cleanList;
     }
-
+// question number 54 : filter strings from list
     public static ArrayList<String> filterStrings(ArrayList<String> list){
         ArrayList<String> updatedList = new ArrayList<>();
 
         for (String string : list) {
-            if (!(string.startsWith("a")||string.startsWith("e")||string.startsWith("i")||string.startsWith("o")||string.startsWith("u"))) {
+            
+            // if (!(string.startsWith("a")||string.startsWith("e")||string.startsWith("i")||string.startsWith("o")||string.startsWith("u"))) {
+
+            if (string.length() > 0 && "aeiouAEIOU".indexOf(string.charAt(0)) < 0) {
+            
                 updatedList.add(string);
             }
         }
