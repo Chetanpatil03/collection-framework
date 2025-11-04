@@ -7,21 +7,22 @@ public class WeakHashmap_demo {
     public static void main(String[] args) {
         WeakHashMap<String,Image> hashMap = new WeakHashMap<>();
         hashMap.put(new String("Chetan"), new Image("Image one"));
-        hashMap.put(new String("Prafful"), new Image("Image three"));
+        hashMap.put(new String("Prafull"), new Image("Image three"));
         hashMap.put(new String("Dipak"), new Image("Image two"));
 
         System.out.println(hashMap);
         System.gc();
         someRandomShit();
-        someRandomShit();
+        // someRandomShit();
 
-        System.out.println(hashMap);
+        System.out.println("Entries after doing some intensive task"+hashMap);
     
     }
 
     public static void someRandomShit(){
         try{
-            Thread.sleep(10000);
+            System.out.println("Doing some heavy task .......");
+            Thread.sleep(5000);
         }
         catch(InterruptedException e){
             e.printStackTrace();
