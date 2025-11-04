@@ -3,6 +3,8 @@ package List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import javax.imageio.ImageIO;
+
 public class Twelve {
 
     // * 51. **Partition into Even and Odd Lists**
@@ -69,6 +71,17 @@ public class Twelve {
         return updatedList;
     }
 
+// 55. **Create List of Squares from Another List**
+    public static ArrayList<Integer> squaresList(ArrayList<Integer> list){
+        ArrayList<Integer> squares = new ArrayList<>();
+        
+        for (Integer integer : list) {
+            squares.add(integer*integer);
+        }
+
+        return squares;
+    }
+
     
     public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -81,6 +94,13 @@ public class Twelve {
         System.out.println("Negative element handled :: "+negativeHandledList(arrayList));
 
         System.out.println("Splitted List :: "+splitList(arrayList));
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.addAll(Arrays.asList(5,6,7,8,9,10,11,12,13,14,15));
+
+
+        System.out.println("Norm of list 2 : "+list);
+        System.out.println("Squares of list 2 : "+squaresList(list));
     }
 }
 
