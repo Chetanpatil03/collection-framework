@@ -1,6 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class ComparableDemo {
     public static void main(String[] args) {
-        
+        List<Student> list = new ArrayList<>();
+        list.add(new Student("Chetan", 9.20));
+        list.add(new Student("Prafulla", 9.40));
+        list.add(new Student("Dipak", 8.40));
+        list.add(new Student("Nikhil", 9.20));
+
+        // list.sort(null);  cause Student class does not have any natural sorting order
+        // so that why comaparable has been introduced for giving user defined class a natural sorting order.
+
+        // Comparator --> Work on two object and used for custom sorting logic.
+        // It has method compare(T o1, T o2) --> ex: compare(Student_1, Student_2)
+
+        // Comparable --> work on user defined class to give them natural sorting logic.
+        // It has compareTo(T o1) method --> ex : Student_1.compareTo(Student_2)
+
+        System.out.println(list);
     }
 }
 
