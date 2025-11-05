@@ -26,10 +26,13 @@ public class ComparableDemo {
         System.out.println(list);
 
 
-        Student student = new Student("chetan", 9.40);
+        // Student student = new Student("chetan", 9.40);
 
         ArrayList<Student> students = new ArrayList<>();
-        students.add(student);
+        students.add(new Student("Chetan", 9.24));
+        students.add(new Student("Prafulla", 9.40));
+        students.add(new Student("Dipak", 8.24));
+        students.add(new Student("Nikhil", 9.24));
 
         System.out.println(students);
     }
@@ -52,13 +55,14 @@ class Student implements Comparable<Student> {
         return gpa;
     }
 
-    @Override
-    public String toString() {
-        return "Student [Name : " + name + ", GPA : " + gpa + " ]";
-    }
+    // @Override
+    // public String toString() {
+    //     return "Student [Name : " + name + ", GPA : " + gpa + " ]";
+    // // }
 
     @Override
     public int compareTo(Student o) {
         return Double.compare(o.getGpa(), this.getGpa());
+        // return 0;
     }
 }
