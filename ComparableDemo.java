@@ -55,14 +55,14 @@ class Student implements Comparable<Student> {
         return gpa;
     }
 
-    // @Override
-    // public String toString() {
-    //     return "Student [Name : " + name + ", GPA : " + gpa + " ]";
-    // // }
+    @Override
+    public String toString() {
+        return "Student [Name : " + name + ", GPA : " + gpa + " ]";
+    }
 
     @Override
     public int compareTo(Student o) {
-        return Double.compare(o.getGpa(), this.getGpa());
+        return Double.compare(this.getGpa(),o.getGpa());
         // return 0;
     }
 }
