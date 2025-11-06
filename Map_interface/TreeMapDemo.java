@@ -11,5 +11,11 @@ public class TreeMapDemo {
         map.put(2, "Prafull");
 
         System.out.println(map);
+
+        // uses internary ---> Red Black Tree
+        //  Self balancing tree --> o(log n)
+        // O(log n) --> map.put and map.get
+
+        
     }
 }
