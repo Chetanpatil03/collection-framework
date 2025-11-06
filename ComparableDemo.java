@@ -23,6 +23,7 @@ public class ComparableDemo {
         // Comparable --> work on user defined class to give them natural sorting logic.
         // It has compareTo(T o1) method --> ex : Student_1.compareTo(Student_2)
 
+        list.sort(null);
         System.out.println(list);
 
 
@@ -34,6 +35,8 @@ public class ComparableDemo {
         students.add(new Student("Dipak", 8.24));
         students.add(new Student("Nikhil", 9.24));
 
+        System.out.println(students);
+        students.sort(null);
         System.out.println(students);
     }
 }
