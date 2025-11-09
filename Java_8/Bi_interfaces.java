@@ -34,5 +34,9 @@ public class Bi_interfaces {
         BiFunction<String,String,Integer> length = (x,y) -> (x+y).length();
 
         System.out.println("Length : "+length.apply("Chetan", "Bachchhav"));
+
+
+        // for shorthand java has BinaryOperator and TernaryOperator which extends Function (@FunctionalInterface)
+        
     }
 }
