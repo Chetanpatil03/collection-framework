@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 
+import Others.Student;
+
 class Student{
     private String name;
     private String Class;
