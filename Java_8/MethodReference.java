@@ -2,6 +2,7 @@ package Java_8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MethodReference {
 
@@ -18,7 +19,26 @@ public class MethodReference {
         // method reference
         students.forEach(System.out::println);
 
+        // constructor reference
+        // want to create a list of Students with using names that are present in students list
+        // using streams
 
-        
+        List<Student> names = students.stream().map(Student::new).collect(Collectors.toList());
+        names.forEach(System.out::println);
+    
+
+
+    }
+}
+
+class Student{
+    String name;
+    public Student(String name){
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "[ Name : "+name + " ],";
     }
 }
