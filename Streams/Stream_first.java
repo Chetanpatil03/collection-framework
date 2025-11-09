@@ -2,6 +2,8 @@ package Streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class Stream_first {
     public static void main(String[] args) {
@@ -27,5 +29,21 @@ public class Stream_first {
 
         // using streams : 
         System.out.println(list.stream().filter(x -> x%2==0).count());
+
+
+        // Way to create streams
+        // 1. using collections
+        Stream<Integer> stream = list.stream();
+
+        // 2. From Arrays
+        int []arr = {15,8,16,14,7,8,51,56,14};
+        IntStream stream2 = Arrays.stream(arr);
+
+        // 3. Using Stream.of()
+        Stream<String> stream3 = Stream.of("chetu","c","x","y");
+
+        // 4. Infinite streams using Stream.generate() --> limit function
+        Stream<Integer> stream4 = Stream.generate(()-> 1).limit(100);
+
     }
 }
