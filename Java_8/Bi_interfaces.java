@@ -3,6 +3,7 @@ package Java_8;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
+import java.util.function.BinaryOperator;
 
 public class Bi_interfaces {
     public static void main(String[] args) {
@@ -37,6 +38,10 @@ public class Bi_interfaces {
 
 
         // for shorthand java has BinaryOperator and TernaryOperator which extends Function (@FunctionalInterface)
-        
+
+        // BinaryOperator 
+        BinaryOperator<Integer> square = (X,y) -> X*y;
+
+        System.out.println("Binary operator : "+square.apply(15, 66));
     }
 }
