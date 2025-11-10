@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import javax.swing.event.ListDataEvent;
+
 public class IntermediateOperations {
     public static void main(String[] args) {
         // Intermediate operations : 
@@ -60,11 +62,11 @@ public class IntermediateOperations {
         // Returns a stream consisting of the elements of this stream, truncated to be no longer than maxSize in length.
         // to limit the infinte stream
         // ex. 
-        long count = Stream.iterate(1, x -> x+1)
-        .peek(System.out::println)
-        .limit(1500) //->>> limit output to 1500
-        .count();
-        System.out.println(count); //---->>> infinite to finite 
+        // long count = Stream.iterate(1, x -> x+1)
+        // .peek(System.out::println)
+        // .limit(1500) //->>> limit output to 1500
+        // .count();
+        // System.out.println(count); //---->>> infinite to finite 
 
         // 6. Skip
         // remaining elements of this stream after discarding the first n elements of the stream
@@ -76,6 +78,11 @@ public class IntermediateOperations {
 
         System.out.println(" count : "+l);
         
-    
+        
+        // example  find elements whose length is more than 3
+        List<String> queList = Arrays.asList("Chetan","Patil","Ram","Shyam","August");
+
+        System.out.println(queList.stream().filter(x-> x.length() > 3).toList());
+
     }
 }
