@@ -83,5 +83,17 @@ public class CollectorsDemo {
         System.out.println(treeMap);
 
 
+        // 9. Partitioning elements
+        // Partitioning elements into two groups (true and false) based on a predicate
+        System.out.println("9 :::");
+        System.out.println(words.stream().collect(Collectors.partitioningBy(x->x.length() > 5)));
+
+        // 10. Mapping and collecting
+        // appies mapping before collecting
+
+        System.out.println(words.stream()
+        .collect(Collectors.mapping(x-> x.toUpperCase(), Collectors.toList())));
+
+
     }
 }
