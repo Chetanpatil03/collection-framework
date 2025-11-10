@@ -132,5 +132,22 @@ public class IntermediateOperations {
 
         System.out.println(queList.stream().filter(x-> x.length() > 3).toList());
 
+
+        Stream<String> stream2 = queList.stream()
+        .map(String::toUpperCase);
+        stream2.forEach(System.out::println); // stream2 --> consumed it can not be reused
+
+        // Note :: --> we can not reused a stream after terminal operation has been called 
+        // if we try to do this
+        //List<String> list2 = stream.map(String::toUpperCase).toList(); //--> java.lang.IllegalStateException: thrown by compiler
+        
+        // soln 
+        
+        List<String> list2 = queList.stream().map(String::toUpperCase).toList();
+        System.out.println(list2);
+
+
+
+
     }
 }

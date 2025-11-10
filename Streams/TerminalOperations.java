@@ -88,7 +88,23 @@ public class TerminalOperations {
             Stream.of(15,67,95).min(Comparator.naturalOrder()).get()
         );
 
+
+        // 9. forEachOrdered 
+        // to execute parallel streams in ordered manner
+        // if use normal forEach for parallel streams so it will run randomaly (Arbitory manner)
+
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9);
+        // unordered and random
+        System.out.println("Parallel streams using forEach");
+        numbers.parallelStream().forEach(System.out::println);
         
+        // ordered and consise
+        System.out.println("Parallel streams using forEach");
+        numbers.parallelStream().forEachOrdered(System.out::println);
+
+
+
+
 
         
 
