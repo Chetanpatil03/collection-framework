@@ -78,6 +78,17 @@ public class IntermediateOperations {
 
         System.out.println(" count : "+l);
         
+
+        // 7. peek()
+        // takes consumer(@FunctionalInterfaces)
+
+        Stream.iterate(1, x -> x+1)
+        .skip(15)
+        .peek(System.out::println)
+        .limit(100)
+        .count();   
+
+
         
         // example  find elements whose length is more than 3
         List<String> queList = Arrays.asList("Chetan","Patil","Ram","Shyam","August");
