@@ -2,6 +2,7 @@ package Streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Example {
     public static void main(String[] args) {
@@ -25,7 +26,14 @@ public class Example {
             integers.stream().reduce(1, Integer::sum)
         );
 
-        
+        // 4. counting occurance of character in String
+        String sentense = "Hello world";
+        long count = sentense.chars() // --> return stream of character(Integers) --> eventually characters are numbers 
+        .filter(x -> x == 'l')
+        .count();
+
+        System.out.println("Count of [l] : "+count);
+
 
     }
 }
