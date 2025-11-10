@@ -1,6 +1,8 @@
 package Streams;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
 
 public class ParallelStreams {
@@ -29,6 +31,22 @@ public class ParallelStreams {
         // parallel streams are effective when we want to do CPU-intensive tasks or large dataset where task are independent
         // distributed processing is needed
         // parallel may add overhead for simple task or small datasets
+
+
+        // cumulative sum --> [1,2,3,4,5] --> [1,3,6,10,15]
+        // it rely on sequantial manner --> which is taks are dependent 
+        List<Integer> numbers = Arrays.asList(1,2,3,4,5);
+        AtomicInteger sum = new AtomicInteger(0);
+        List<Integer> cumulativeSum = numbers.parallelStream()
+        // List<Integer> cumulativeSum = numbers.parallelStream().sequential() --> converting parallel to sequential
+        // List<Integer> cumulativeSum = numbers.stream()
+        .map(sum::addAndGet)
+        .toList();
+
+        System.out.println("Expected result : [1,3,6,10,15] :: "+cumulativeSum); //Expected result : [1,3,6,10,15] :: [15, 14, 12, 9, 5] --> ParallelStreams
+
+        // if we want this result we need to use sequantial() or normal streams
+        
     }
 
     public static long factorial(int x){
