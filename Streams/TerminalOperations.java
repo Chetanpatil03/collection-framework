@@ -1,9 +1,11 @@
 package Streams;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class TerminalOperations {
     public static void main(String[] args) {
@@ -19,7 +21,7 @@ public class TerminalOperations {
         // ex : 
         List<Integer> list = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
 
-        List<Integer> reverseSorted = list.stream()
+        final List<Integer> reverseSorted = list.stream()
         .sorted((x,y) -> y - x)
         // .collect(Collectors.toList())
         .toList();
@@ -70,7 +72,24 @@ public class TerminalOperations {
         System.out.println(list.stream().findFirst().get());
         System.out.println(list.stream().findFirst().get());
 
+        // 7. toArray --> convert stream to array 
+        // example
+
+        Object[] array = Stream.of(15,7,69,68,95).toArray();
+        System.out.println("Array  : "+array);
+
+        // 8. min/max
+
+        List<Integer> list2 = Arrays.asList(15,78,96,7,6,2,14,3,8,2,7,59,67,18);
+        System.out.println("Max : "+
+            list2.stream().max(Comparator.naturalOrder()).get());
+
+        System.out.println( "Min value : " + 
+            Stream.of(15,67,95).min(Comparator.naturalOrder()).get()
+        );
+
         
+
         
 
 

@@ -88,8 +88,45 @@ public class IntermediateOperations {
         .limit(100)
         .count();   
 
+        // 8. flatMap
+
+        List<List<String>> fruits = Arrays.asList(
+            Arrays.asList("Mango","Banana"),
+            Arrays.asList("Apple","Kiwi"),
+            Arrays.asList("Pear","Grapes")
+        );
+
+        // flaten this list convert to uppercase and make it one list
+
+        System.out.println(
+
+            fruits.stream().flatMap(x-> x.stream())
+            .map(String::toUpperCase)
+            .toList()
+        );
+
+        // example two--> 
+
+        List<String> sentenses = Arrays.asList(
+            "Hello world",
+            "Java streams are useful",
+            "Flatmap are good to have"
+        ); //--> [MANGO, BANANA, APPLE, KIWI, PEAR, GRAPES]
+
+        // flatten it and also convert to list
+
+        System.out.println(
+
+        sentenses.stream()
+        .flatMap(sentense -> Arrays.stream(sentense.split(" ")))
+        .map(String::toUpperCase)
+        .toList()
+        ); // --> [HELLO, WORLD, JAVA, STREAMS, ARE, USEFUL, FLATMAP, ARE, GOOD, TO, HAVE]  
 
         
+        
+
+
         // example  find elements whose length is more than 3
         List<String> queList = Arrays.asList("Chetan","Patil","Ram","Shyam","August");
 
