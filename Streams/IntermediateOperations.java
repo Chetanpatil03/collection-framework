@@ -55,6 +55,26 @@ public class IntermediateOperations {
         System.out.println("Distinct elements : "+collect2);
         System.out.println("Count : "+distinctWithFilter);
 
+
+        // 5. Limit:
+        // Returns a stream consisting of the elements of this stream, truncated to be no longer than maxSize in length.
+        // to limit the infinte stream
+        // ex. 
+        long count = Stream.iterate(1, x -> x+1)
+        .peek(System.out::println)
+        .limit(1500) //->>> limit output to 1500
+        .count();
+        System.out.println(count); //---->>> infinite to finite 
+
+        // 6. Skip
+        // remaining elements of this stream after discarding the first n elements of the stream
+        // take n --> first elements to skip
+        Long l = Stream.iterate(1, x -> x+1)
+        .limit(1000)
+        .skip(15)
+        .count();
+
+        System.out.println(" count : "+l);
         
     
     }
