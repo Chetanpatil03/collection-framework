@@ -2,6 +2,7 @@ package Queue;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 class Consumer implements Runnable {
     
@@ -82,7 +83,31 @@ public class BlockingQueueDemo {
             // BlockingQueue --> interface can not instantiated --> implements ArrayBlockingQueue
 
         // ArrayBlockingQueue --> a bounded queue blocked by an array.
+        // low memory overhead --> single lock
+        // producer consumer -- deque and enque --> operation share lock with each other
+        // use single lock for both enquire and deque
+        //  more thread --> more problem
 
+        // 2. LinkedBlockingQueue -->
+        
+        BlockingQueue<Integer> queue2 = new LinkedBlockingQueue<>();
+        // if capacity is provided then it is saved if not provided then it will take Integer.MAX
+        // backed by linkedList
+        // higher concurrency between producers and consumers
+        // use two seperate locks for enque and deque operations
+        // used when more threads
+
+        // 3. PriorityBlockingQueue --> unbounded  --> default inital capacity 11
+        // orders their elemenets according to their natural order
+        // same as priorityQueue --> Binary heap as array 
+        // can grow and shrink dynamically
+        // orders their elemenets according to their natural ordering or a provide Comparator
+        // we can consume according to priority
+        // put wont work
+
+        // 4. SynchronisedQueue --> 
+        // each insert operation must wait for a corresponding remove operation by another thread and vice versa
+        // it can store only one element, capacity at most one element
 
     }
 }
