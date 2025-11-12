@@ -18,6 +18,9 @@ public class One {
             System.out.print(string+", ");
         }
 
+        System.out.println("Elements : ");
+        names.forEach(System.out::println);
+
         //two
         System.out.println("\nPerson at second index is : "+names.get(2));
 
