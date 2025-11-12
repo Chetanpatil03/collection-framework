@@ -61,7 +61,8 @@ class Producer implements Runnable {
 public class BlockingQueueDemo {
     public static void main(String[] args) {
 
-        BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(5);
+        // BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(5);
+        BlockingQueue<Integer> queue = new LinkedBlockingQueue<>();
 
         Thread producer = new Thread(new Producer(queue));
         Thread consumer = new Thread(new Consumer(queue));
