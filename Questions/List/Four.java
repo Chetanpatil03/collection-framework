@@ -1,4 +1,4 @@
-package Questions;
+package List;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -40,6 +40,8 @@ public class Four {
 
         //fifteen
         System.out.println(numbers.isEmpty() ? "The list is empty":"The list is not empty");
+
+        sc.close();
     }
 }
 

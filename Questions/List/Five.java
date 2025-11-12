@@ -8,6 +8,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Five {
+
+        
     public static void main(String[] args) {
         // Find max and min in ArrayList
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(12,95,49,5,67,51,37,64,69,27,51,57,53,37,55,17));
