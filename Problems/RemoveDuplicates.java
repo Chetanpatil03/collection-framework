@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import java.util.HashSet;
+
 
 public class RemoveDuplicates {
     public static void main(String[] args) {
@@ -7,8 +9,13 @@ public class RemoveDuplicates {
         Arrays.stream(arr).forEach(x -> System.out.print(x+" "));
         System.out.println();
 
+        HashSet<Integer> set = new HashSet<>();
+        for (Integer i : arr) {
+            set.add(i);
+        }
 
-        
+        System.out.println("After removing Duplicates :: "
+        +(set.stream().forEach(x-> System.out.print(x +" "))));
 
 
     }
