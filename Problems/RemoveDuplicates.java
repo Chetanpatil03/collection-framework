@@ -14,8 +14,10 @@ public class RemoveDuplicates {
             set.add(i);
         }
 
-        System.out.println("After removing Duplicates :: "
-        +(set.stream().forEach(x-> System.out.print(x +" "))));
+        System.out.println("After removing Duplicates :: ");
+        System.out.print("Arrays   :: ");
+        set.forEach(x -> System.out.print(x + " "));
+        System.out.println();
 
 
     }
