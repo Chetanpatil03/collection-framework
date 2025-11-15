@@ -11,6 +11,13 @@ public class Pallindrom {
         return sc.nextLine();
     }
 
+    public int revNum(int n){
+        int rev = n;
+        while (n > 0) {
+            rev += 
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
