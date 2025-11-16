@@ -36,7 +36,15 @@ public class FirstTen {
         }
     }
 
+    // four - A
+    public static int greatesOfThree_A(int a,int b,int c){
+        return Math.max(Math.max(a, b), c);
+    }
 
+    //four - B
+    public static int greatesOfThree_B(int a,int b,int c){
+        return a > b ?( a > c ? a : c) : b > c ? b : c; 
+    }
 
 
 
