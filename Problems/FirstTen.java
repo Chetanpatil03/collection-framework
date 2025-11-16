@@ -53,7 +53,7 @@ public class FirstTen {
         }
     }
 
-    // six:: A -- factorial
+    // six:: A -- factorial {Iterative}
     public static int factorial_A(int n){
         int res = 1;
         for (int i = 1; i <= n; i++) {
@@ -63,6 +63,15 @@ public class FirstTen {
         return res;
     }
     
+    // six:: B -- factorial{Recursive}
+    public static int factorial_B(int n){
+        if (n <= 0 || n == 1) {
+            return 1;
+        }
+        else{
+            return n * factorial_B(n-1);
+        }
+    }
     
 
 
