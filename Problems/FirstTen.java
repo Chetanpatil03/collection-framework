@@ -72,6 +72,11 @@ public class FirstTen {
             return n * factorial_B(n-1);
         }
     }
+
+    // seven
+    public static String revString(String s){
+        return new StringBuffer(s).reverse().toString();
+    }
     
 
 
