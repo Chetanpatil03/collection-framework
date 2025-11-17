@@ -1,7 +1,7 @@
 
 
 /*
-1. Write a program to print "Hello, World!".
+-- 1. Write a program to print "Hello, World!".
 2. Write a program to add two numbers and print the result.
 3. Write a program to check if a number is even or odd.
 4. Write a program to find the largest of three numbers.
@@ -10,7 +10,7 @@
 7. Write a program to reverse a string.
 8. Write a program to check if a string is a palindrome.
 9. Write a program to find the sum of all elements in an array.
-10. Write a program to count the number of vowels in a string.
+-- 10. Write a program to count the number of vowels in a string.
  */
 
 
@@ -96,16 +96,14 @@ public class FirstTen {
     }
 
 
-    // to count the number of vowel in string 
+    // que - 10 :: to count the number of vowel in string 
     public static int countVowels(String s){
         int count = 0;
-
         char [] charArray = s.toLowerCase().toCharArray();
         for (char c : charArray) {
             if (c == 'a'|| c == 'e' || c== 'i'|| c == 'o'|| c=='u') continue;
             else count++;
         }
-
         return count;
     }
 
