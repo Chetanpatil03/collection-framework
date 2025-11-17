@@ -77,10 +77,15 @@ public class FirstTen {
     public static String revString(String s){
         return new StringBuffer(s).reverse().toString();
     }
-
-    
+  
+    // way - one
     public static boolean isPallindrom(String s){
         return new StringBuffer(s).reverse().toString().equals(s);
+    }
+
+    // way - two
+    public static boolean isPallindrom_B(String s){
+        return revString(s).equals(s);
     }
 
 
