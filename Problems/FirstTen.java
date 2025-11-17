@@ -78,12 +78,12 @@ public class FirstTen {
         return new StringBuffer(s).reverse().toString();
     }
   
-    // way - one
+    //  que. eigth :: way - one
     public static boolean isPallindrom(String s){
         return new StringBuffer(s).reverse().toString().equals(s);
     }
 
-    // way - two
+    // que. eigth :: way - two
     public static boolean isPallindrom_B(String s){
         return revString(s).equals(s);
     }
@@ -95,7 +95,6 @@ public class FirstTen {
         return sum;
     }
 
-    public
 
     public static void main(String[] args) {
         
