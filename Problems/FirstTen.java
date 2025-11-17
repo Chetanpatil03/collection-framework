@@ -79,7 +79,9 @@ public class FirstTen {
     }
 
     
-    
+    public static boolean isPallindrom(String s){
+        return new StringBuffer(s).reverse().toString().equals(s);
+    }
 
 
     public static void main(String[] args) {
