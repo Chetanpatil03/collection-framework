@@ -96,6 +96,19 @@ public class FirstTen {
     }
 
 
+    // to count the number of vowel in string 
+    public static int countVowels(String s){
+        int count = 0;
+
+        char [] charArray = s.toLowerCase().toCharArray();
+        for (char c : charArray) {
+            if (c == 'a'|| c == 'e' || c== 'i'|| c == 'o'|| c=='u') continue;
+            else count++;
+        }
+
+        return count;
+    }
+
     public static void main(String[] args) {
         
     }
