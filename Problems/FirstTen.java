@@ -88,6 +88,14 @@ public class FirstTen {
         return revString(s).equals(s);
     }
 
+    // finding sum of all array elements
+    public static int arraySum(int [] arr){
+        int sum = 0;
+        for (int i : arr) sum += i;
+        return sum;
+    }
+
+    public
 
     public static void main(String[] args) {
         
