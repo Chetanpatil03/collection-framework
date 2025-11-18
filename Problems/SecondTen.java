@@ -12,13 +12,22 @@
 20. Write a program to remove all white spaces from a string.
  */
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class SecondTen {
     // question-- 11
-    public static void smallestElement(int []arr){
-       int min =  Arrays.stream(arr).reduce(, null)
+    public static int smallestElement(int []arr){
+       int min = 0;
+       for (int i : arr) if (i < min) min = i;
+       return min;
+    }
+
+    // way two -- find out smallest element in array
+    public static int smallestEle(Integer []arr){
+        int min = new ArrayList<Integer>(Arrays.asList(arr)).stream().min(null).get();
+        return min;
+    }
 
     public static void main(String[] args) {
         
