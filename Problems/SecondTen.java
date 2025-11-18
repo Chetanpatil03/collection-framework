@@ -74,7 +74,12 @@ public class SecondTen {
     public static boolean isPrime(int a){
         return a % 2 == 0;
     }
-    
+
+    // number if prime of not -- way two
+    public static String isPrime_B(int a){
+        return a % 2 == 0 ? "Prime" : "Not a prime";
+    }
+
 
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
