@@ -35,6 +35,20 @@ public class SecondTen {
         return arr;
     }
 
+    public static int [] sortArray_B(int []arr){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        return arr;
+    }
+
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
         System.out.print("Before :: ");
@@ -43,4 +57,5 @@ public class SecondTen {
         System.out.print("\nAfter :: ");
         for (int i : arr) System.out.print(i+" ");
     }
+
 }
