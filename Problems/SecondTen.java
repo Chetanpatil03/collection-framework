@@ -1,7 +1,7 @@
 
 /*
-11. Write a program to find the smallest element in an array.
-12. Write a program to sort an array in ascending order.
+-- 11. Write a program to find the smallest element in an array.
+-- 12. Write a program to sort an array in ascending order.
 13. Write a program to find the GCD of two numbers.
 14. Write a program to check if a number is prime.
 15. Write a program to generate Fibonacci series up to n terms.
@@ -29,7 +29,18 @@ public class SecondTen {
         return min;
     }
 
+    // shortest/easiest way to sort array
+    public static int [] sortArray(int []arr){
+        Arrays.sort(arr);
+        return arr;
+    }
+
     public static void main(String[] args) {
-        
+        int [] arr = {15,9,5,9,7,5,1,95,67,74};
+        System.out.print("Before :: ");
+        for (int i : arr) System.out.print(i+" ");
+        arr = sortArray(arr);
+        System.out.print("\nAfter :: ");
+        for (int i : arr) System.out.print(i+" ");
     }
 }
