@@ -81,6 +81,21 @@ public class SecondTen {
     }
 
 
+    public static ArrayList<Integer> fibSeries(int n){
+        int a = 0, b = 1;
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            arrayList.add(a);
+
+            // calculate next
+            int nextTerm = a + b;
+            a = b;
+            b = nextTerm;
+        }
+
+        return arrayList;
+    }
+
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
         System.out.print("Before :: ");
@@ -88,6 +103,8 @@ public class SecondTen {
         arr = sortArray(arr);
         System.out.print("\nAfter :: ");
         for (int i : arr) System.out.print(i+" ");
+
+        System.out.println("Fibb series :: "+fibSeries(10));
     }
 
 }
