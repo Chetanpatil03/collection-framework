@@ -80,7 +80,7 @@ public class SecondTen {
         return a % 2 == 0 ? "Prime" : "Not a prime";
     }
 
-
+    // finding fibbonacci series
     public static ArrayList<Integer> fibSeries(int n){
         int a = 0, b = 1;
         ArrayList<Integer> arrayList = new ArrayList<>();
