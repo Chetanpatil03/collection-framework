@@ -6,7 +6,7 @@
 -- 14. Write a program to check if a number is prime.
 -- 15. Write a program to generate Fibonacci series up to n terms.
 -- 16. Write a program to swap two numbers without using a temporary variable.
-17. Write a program to find the length of a string.
+-- 17. Write a program to find the length of a string.
 18. Write a program to convert Celsius to Fahrenheit.
 19. Write a program to count the number of words in a sentence.
 20. Write a program to remove all white spaces from a string.
@@ -103,6 +103,11 @@ public class SecondTen {
         a = a + b;
         b = a - b;
         System.out.println("After :: "+a+", "+b);
+    }
+
+    // finding length of string
+    public static int stringLength(String string){
+        return string.length();
     }
 
     public static void main(String[] args) {
