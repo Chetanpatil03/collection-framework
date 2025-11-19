@@ -5,7 +5,7 @@
 13. Write a program to find the GCD of two numbers.
 -- 14. Write a program to check if a number is prime.
 -- 15. Write a program to generate Fibonacci series up to n terms.
-16. Write a program to swap two numbers without using a temporary variable.
+-- 16. Write a program to swap two numbers without using a temporary variable.
 17. Write a program to find the length of a string.
 18. Write a program to convert Celsius to Fahrenheit.
 19. Write a program to count the number of words in a sentence.
@@ -96,6 +96,7 @@ public class SecondTen {
         return arrayList;
     }
 
+    // without using third variable -- to swap numbers
     public static void swapNumbers(int a, int b){
         System.out.println("Before :: "+a+", "+b);
         b = b - a;
