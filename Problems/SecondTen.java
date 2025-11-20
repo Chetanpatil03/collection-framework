@@ -112,8 +112,8 @@ public class SecondTen {
 
 
     // count words in string
-    public static void countWords(String str){
-        
+    public static int countWords(String str){
+        return str.trim().split(" ").length;
     }
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
