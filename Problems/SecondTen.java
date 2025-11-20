@@ -116,8 +116,8 @@ public class SecondTen {
         return str.trim().split(" ").length;
     }
 
-    public static void removeWhitespaces(String string){
-        string.replace(" ", "")
+    public static String removeWhitespaces(String string){
+        return string.replace(" ", "");
     }
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
@@ -131,6 +131,7 @@ public class SecondTen {
         swapNumbers(10,20);
 
         System.out.println("words in string :: "+countWords("Chetan chudaman patil"));
+        System.out.println("words in string :: "+removeWhitespaces("Chetan chudaman patil"));
     }
 
 }
