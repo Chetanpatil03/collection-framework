@@ -117,7 +117,7 @@ public class SecondTen {
     }
 
     public static void removeWhitespaces(String string){
-        
+        string.replace(" ", "")
     }
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
