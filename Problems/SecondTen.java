@@ -8,8 +8,8 @@
 -- 16. Write a program to swap two numbers without using a temporary variable.
 -- 17. Write a program to find the length of a string.
 18. Write a program to convert Celsius to Fahrenheit.
-19. Write a program to count the number of words in a sentence.
-20. Write a program to remove all white spaces from a string.
+-- 19. Write a program to count the number of words in a sentence.
+-- 20. Write a program to remove all white spaces from a string.
  */
 
 import java.util.ArrayList;
@@ -114,6 +114,10 @@ public class SecondTen {
     // count words in string
     public static int countWords(String str){
         return str.trim().split(" ").length;
+    }
+
+    public static void removeWhitespaces(String string){
+        
     }
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
