@@ -125,6 +125,8 @@ public class SecondTen {
 
         System.out.println("Fibb series :: "+fibSeries(10));
         swapNumbers(10,20);
+
+        System.out.println("words in string :: "+countWords("Chetan chudaman patil"));
     }
 
 }
