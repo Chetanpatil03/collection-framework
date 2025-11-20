@@ -110,6 +110,11 @@ public class SecondTen {
         return string.length();
     }
 
+
+    // count words in string
+    public static void countWords(String str){
+        
+    }
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
         System.out.print("Before :: ");
