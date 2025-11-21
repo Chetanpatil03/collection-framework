@@ -1,6 +1,12 @@
 public class ThirdTen {
+
+    // year is leap or not
+    public static boolean isLeap(int year){
+        return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0 )? true : false;
+    }
+
     public static void main(String[] args) {
-        
+        System.out.println("Year [1996] :: "+isLeap(1996));
     }
 }
 
