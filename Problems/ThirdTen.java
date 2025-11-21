@@ -15,9 +15,27 @@ public class ThirdTen {
         System.out.println("Average of array :: "+sum/arr.length);
     }
 
+    // finding is prime
+    public static boolean isPrime(int n){
+        if (n <= 1) return false;
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (n % 2 == 0) return false;
+        }
+
+        return true;
+    }
+
+    public static void printingPrime(){
+        for (int i = 1; i < 100; i++) {
+            if (isPrime(i)) System.out.println(i);
+        }
+    }
+
+
     public static void main(String[] args) {
         System.out.println("Year [1996] :: "+isLeap(1996));
         arrayAverage(new int[]{15,4,95,67,95,36,76,24,38,62});
+        
     }
 }
 
