@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ThirdTen {
 
     // year is leap or not
@@ -31,11 +33,39 @@ public class ThirdTen {
         }
     }
 
+    // finding if two strings are anagrams 
+    public static boolean stringAnagrams(String s_one, String s_two){
+        char [] arr_one = s_one.toCharArray();
+        char [] arr_two = s_two.toCharArray();
+
+        Arrays.sort(arr_one);
+        Arrays.sort(arr_two);
+
+        boolean flag = true;
+
+        if (arr_one.length == arr_two.length) {
+            for (int i = 0; i < arr_two.length; i++) {
+                if (!(arr_one[i] == arr_two[i])) {
+                    flag = false;
+                }
+            }
+        }
+        else{
+            flag = false;
+        }
+
+        return flag;
+    }
+
+    // 
+
 
     public static void main(String[] args) {
-        System.out.println("Year [1996] :: "+isLeap(1996));
-        arrayAverage(new int[]{15,4,95,67,95,36,76,24,38,62});
-        printingPrime();
+        // System.out.println("Year [1996] :: "+isLeap(1996));
+        // arrayAverage(new int[]{15,4,95,67,95,36,76,24,38,62});
+        // printingPrime();
+
+        System.out.println("String anagram :: {listen}{silent} :: "+stringAnagrams("silent", "listen"));
     }
 }
 
