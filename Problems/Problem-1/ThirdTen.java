@@ -37,12 +37,12 @@ public class ThirdTen {
     public static boolean stringAnagrams(String s_one, String s_two){
         char [] arr_one = s_one.toCharArray();
         char [] arr_two = s_two.toCharArray();
-
+        
         Arrays.sort(arr_one);
         Arrays.sort(arr_two);
-
+        
         boolean flag = true;
-
+        
         if (arr_one.length == arr_two.length) {
             for (int i = 0; i < arr_two.length; i++) {
                 if (!(arr_one[i] == arr_two[i])) {
@@ -53,11 +53,26 @@ public class ThirdTen {
         else{
             flag = false;
         }
-
+        
         return flag;
     }
+    
+    // optimized approch
+    public static boolean stringAnagrams_optimized(String s_one, String s_two){
+        if (s_one.length() == s_two.length()) return false;
 
-    // 
+        // convert to char array
+        char[] arr_one = s_one.toCharArray();
+        char[] arr_two = s_two.toCharArray();
+
+        // sort the arrays
+        Arrays.sort(arr_one);
+        Arrays.sort(arr_two);
+
+        // compare and return
+        return Arrays.equals(arr_one, arr_two);
+    }
+
 
 
     public static void main(String[] args) {
@@ -71,7 +86,7 @@ public class ThirdTen {
 
 /* Question to solve
 21. Write a program to find the second largest element in an array.
-22. Write a program to check if two strings are anagrams.
+-- 22. Write a program to check if two strings are anagrams.
 23. Write a program to print all prime numbers between 1 and 100.
 24. Write a program to find the sum of digits of a number.
 -- 25. Write a program to check if a year is a leap year.
