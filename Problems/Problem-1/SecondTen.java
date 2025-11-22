@@ -119,6 +119,18 @@ public class SecondTen {
     public static String removeWhitespaces(String string){
         return string.replace(" ", "");
     }
+
+    // converting Celsius to Fahrenheit 
+    // (0°C × 9/5) + 32 = 32°F
+    public static float celsiusToFahernheit(int celsius){
+        return (float) (celsius * (9/5)) + 32;
+    }
+
+    // Fahrenheit to Celsius
+    // (0°F − 32) × 5/9 = -17.78°C
+
+    public 
+
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
         System.out.print("Before :: ");
