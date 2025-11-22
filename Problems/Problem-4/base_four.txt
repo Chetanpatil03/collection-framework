@@ -1,0 +1,110 @@
+Got it!
+Here is a **completely fresh**, **unique**, **non-repeated** set of **beginner + intermediate Java coding questions** (none of these were listed in any earlier messages).
+
+---
+
+# ✅ **Brand-New Beginner-Level Java Coding Questions**
+
+### **Basics & Logic**
+
+1. Print all numbers divisible by both 3 and 5 in a given range.
+2. Print all odd numbers between two given numbers.
+3. Check if a year is a leap year (without using built-in API).
+4. Count the number of words in a sentence.
+5. Convert a number to binary (manual implementation).
+6. Find the largest prime factor of a number.
+7. Print the first N perfect squares.
+8. Compute the sum of first N natural numbers (recursive + iterative).
+9. Reverse digits at even positions in a number.
+10. Check if a number is an automorphic number.
+
+### **Strings – Beginner**
+
+11. Replace all vowels in a string with ‘*’.
+12. Find length of string without using `.length()`.
+13. Check if string ends with another string (manual implementation).
+14. Remove all duplicate words in a sentence.
+15. Count how many times a substring appears in a string.
+
+### **Arrays – Beginner**
+
+16. Check if an array is a palindrome array.
+17. Calculate the product of all array elements except self (simple O(n²) version).
+18. Create an array of squares of the original array.
+19. Print all pairs of elements whose difference is a given number.
+20. Find total number of unique elements in an array.
+
+### **Patterns – Beginner**
+
+21. Print a diamond star pattern.
+22. Print a cross (X) pattern using numbers.
+23. Print a hollow pyramid using stars.
+24. Print a left-aligned arrow pattern.
+25. Print number pattern where digits increase diagonally.
+
+---
+
+# 🔥 **Brand-New Intermediate-Level Java Coding Questions**
+
+### **Arrays – Intermediate**
+
+1. Find the smallest missing positive number.
+2. Find all triplets with zero sum.
+3. Merge overlapping intervals (array of intervals).
+4. Find the peak element in an array (not necessarily sorted).
+5. Implement array left rotation by K positions (optimized O(n)).
+
+### **Strings – Intermediate**
+
+6. Find the longest word in a given sentence without using split().
+7. Remove characters from string that appear more than once.
+8. Determine if two strings can become equal by full rotation.
+9. Swap two words in a sentence without using extra string variable.
+10. Identify the most frequent character without using Maps.
+
+### **Collections – Intermediate**
+
+11. Implement your own dynamic array class (similar to ArrayList).
+12. Group strings by their lengths using HashMap.
+13. Sort a list of objects by multiple fields (e.g., name then age).
+14. Use a Stack to evaluate a postfix expression.
+15. Find the frequency of each character using TreeMap (auto-sorted).
+
+### **Linked List – Intermediate**
+
+16. Insert node at a specific index.
+17. Remove all occurrences of a given value.
+18. Split a linked list into two halves.
+19. Check if linked list is circular.
+20. Remove duplicates from a sorted linked list.
+
+### **Recursion & Math**
+
+21. Print all subsets of a string using recursion.
+22. Count the number of ways to climb stairs (classic DP/recursion).
+23. Find sum of array using recursion.
+24. Generate binary strings of length N.
+25. Solve Nth Tribonacci number.
+
+### **Logic / Problem Solving**
+
+26. Check if a matrix is symmetric.
+27. Rotate a matrix by 90 degrees.
+28. Count islands in a grid (DFS/BFS).
+29. Find the common elements in all rows of a matrix.
+30. Implement a mini URL shortener logic (without storing URLs).
+
+---
+
+# 🎯 Want More?
+
+I can generate **100 more fresh questions**, or **topic-specific** sets like:
+
+* Arrays only
+* Strings only
+* Recursion
+* Collections
+* OOP practical coding
+* Java 8 (Streams, Lambdas)
+
+Just tell me what category + how many you want!
