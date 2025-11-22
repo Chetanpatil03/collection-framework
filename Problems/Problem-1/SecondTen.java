@@ -2,12 +2,12 @@
 /*
 -- 11. Write a program to find the smallest element in an array.
 -- 12. Write a program to sort an array in ascending order.
-13. Write a program to find the GCD of two numbers.
+-- 13. Write a program to find the GCD of two numbers.
 -- 14. Write a program to check if a number is prime.
 -- 15. Write a program to generate Fibonacci series up to n terms.
 -- 16. Write a program to swap two numbers without using a temporary variable.
 -- 17. Write a program to find the length of a string.
-18. Write a program to convert Celsius to Fahrenheit.
+-- 18. Write a program to convert Celsius to Fahrenheit.
 -- 19. Write a program to count the number of words in a sentence.
 -- 20. Write a program to remove all white spaces from a string.
  */
@@ -132,7 +132,17 @@ public class SecondTen {
     public static float fahrenheitToCelsius(float fahrenheit){
         return (fahrenheit - 32) * (5/9);
     }
-    
+
+    // Function to calculate GCD using Euclidean algorithm
+    public static int findGCD(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
 
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
