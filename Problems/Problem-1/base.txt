@@ -1,0 +1,32 @@
+1. Write a program to print "Hello, World!".
+2. Write a program to add two numbers and print the result.
+3. Write a program to check if a number is even or odd.
+4. Write a program to find the largest of three numbers.
+5. Write a program to print the multiplication table of a given number.
+6. Write a program to calculate the factorial of a number.
+7. Write a program to reverse a string.
+8. Write a program to check if a string is a palindrome.
+9. Write a program to find the sum of all elements in an array.
+10. Write a program to count the number of vowels in a string.
+
+11. Write a program to find the smallest element in an array.
+12. Write a program to sort an array in ascending order.
+13. Write a program to find the GCD of two numbers.
+14. Write a program to check if a number is prime.
+15. Write a program to generate Fibonacci series up to n terms.
+16. Write a program to swap two numbers without using a temporary variable.
+17. Write a program to find the length of a string.
+18. Write a program to convert Celsius to Fahrenheit.
+19. Write a program to count the number of words in a sentence.
+20. Write a program to remove all white spaces from a string.
+
+21. Write a program to find the second largest element in an array.
+22. Write a program to check if two strings are anagrams.
+23. Write a program to print all prime numbers between 1 and 100.
+24. Write a program to find the sum of digits of a number.
+25. Write a program to check if a year is a leap year.
+26. Write a program to find the average of elements in an array.
+27. Write a program to remove duplicate elements from an array.
+28. Write a program to convert a decimal number to binary.
+29. Write a program to find the frequency of each character in a string.
+30. Write a program to merge two arrays.

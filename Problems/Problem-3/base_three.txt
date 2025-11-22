@@ -1,0 +1,108 @@
+Below is a **fresh set of beginner + intermediate Java coding questions**, different from the earlier list. These are excellent for improving logic, syntax, loops, arrays, strings, and basic data structures.
+
+---
+
+# ✅ **Beginner-Level Coding Questions (More)**
+
+### **Basic Program Logic**
+
+1. Print numbers from 1 to 100 without using loops.
+2. Find the average of N numbers.
+3. Convert Celsius to Fahrenheit.
+4. Check if a character is a vowel, consonant, digit, or special character.
+5. Count positive, negative, and zero values from an input list.
+6. Find the largest and smallest digit in a number.
+7. Convert lowercase string to uppercase (without using built-in).
+8. Print multiplication table of a number.
+9. Calculate power of a number without using Math.pow().
+10. Print all factors of a number.
+
+### **Loops & Patterns**
+
+11. Print a triangle pattern of stars.
+12. Print a pyramid number pattern.
+13. Print a hollow square pattern.
+14. Print Floyd’s triangle.
+15. Print Pascal's triangle.
+
+### **Arrays (Simple)**
+
+16. Count even and odd numbers in an array.
+17. Find the number of elements greater than a given value.
+18. Calculate sum + average of array elements.
+19. Create a new array containing only even numbers.
+20. Multiply all elements of an array.
+
+### **Strings (Simple)**
+
+21. Reverse words in a sentence (word by word).
+22. Remove duplicate characters from a string.
+23. Count uppercase, lowercase, digits, and special characters.
+24. Convert string to title case (capitalize each word).
+25. Check if two strings are rotations of each other.
+
+---
+
+# 🔥 **Intermediate-Level Coding Questions (More)**
+
+### **Arrays (Intermediate)**
+
+1. Remove all occurrences of a given element from an array.
+2. Find the longest increasing subarray.
+3. Find the leader elements in an array (elements greater than all to their right).
+4. Move all zeros to the end of the array.
+5. Sum of all subarrays.
+
+### **Strings (Intermediate)**
+
+6. Implement your own `substring()` method.
+7. Check if a string is a valid palindrome after removing non-alphanumeric characters.
+8. Longest palindrome substring (medium difficulty).
+9. Check if two strings are isomorphic.
+10. Compress a string (e.g., aaabb → a3b2).
+
+### **Mathematical / Logical**
+
+11. Generate all combinations of balanced parentheses for n pairs.
+12. Print all subsets of a given set.
+13. Check if number is happy number.
+14. Find digital root of a number.
+15. Convert Roman numerals to integer.
+
+### **Collections/Maps**
+
+16. Count word frequency in a paragraph (use HashMap).
+17. Sort list of objects using Comparator (by age, name, etc.).
+18. Group items using HashMap (e.g., group students by grade).
+19. Remove duplicates from list while maintaining order.
+20. Find intersection & union of two ArrayLists.
+
+### **LinkedList Basic**
+
+21. Insert a node at beginning/end/middle.
+22. Delete node by value.
+23. Find length of linked list.
+24. Reverse linked list (iterative).
+25. Find middle element of linked list.
+
+### **Intermediate Logic Problems**
+
+26. Find first repeating and first non-repeating element in an array.
+27. Find sum of unique elements.
+28. Replace every element with the greatest element to its right.
+29. Check if array is sorted (ascending or descending).
+30. Implement basic calculator (+, -, *, /) without using eval.
+
+---
+
+# ⚙️ Want even *more* questions?
+
+I can generate:
+✔ 100+ beginner level
+✔ 100+ intermediate level
+✔ Topic-wise sets (Arrays, Strings, Loops, OOP, Recursion, Collections)
+✔ Coding questions **with answers in Java**
+
+Tell me:
+**“Give me 100 beginner questions”** or
+**“Give me intermediate questions for arrays/strings/etc.”**
