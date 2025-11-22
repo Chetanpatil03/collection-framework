@@ -129,7 +129,10 @@ public class SecondTen {
     // Fahrenheit to Celsius
     // (0°F − 32) × 5/9 = -17.78°C
 
-    public 
+    public static float fahrenheitToCelsius(float fahrenheit){
+        return (fahrenheit - 32) * (5/9);
+    }
+    
 
     public static void main(String[] args) {
         int [] arr = {15,9,5,9,7,5,1,95,67,74};
