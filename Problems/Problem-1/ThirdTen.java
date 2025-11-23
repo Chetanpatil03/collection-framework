@@ -120,7 +120,7 @@ public class ThirdTen {
 }
 
 /* Question to solve
-21. Write a program to find the second largest element in an array.
+-- 21. Write a program to find the second largest element in an array.
 -- 22. Write a program to check if two strings are anagrams.
 -- 23. Write a program to print all prime numbers between 1 and 100.
 24. Write a program to find the sum of digits of a number.
