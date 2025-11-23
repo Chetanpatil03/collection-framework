@@ -95,14 +95,15 @@ public class OneTen {
     }
 }
 
-/*1. Write a program to check if a number is even or odd.
-2. Find the largest of three numbers.
-3. Check if a number is prime.
-4. Print Fibonacci series up to N terms.
+/*1. 
+-- Write a program to check if a number is even or odd.
+-- 2. Find the largest of three numbers.
+-- 3. Check if a number is prime.
+-- 4. Print Fibonacci series up to N terms.
 5. Reverse a number.
-6. Check if a string is a palindrome.
+-- 6. Check if a string is a palindrome.
 7. Count vowels and consonants in a string.
-8. Find the factorial of a number.
-9. Swap two numbers without using a third variable.
+-- 8. Find the factorial of a number.
+-- 9. Swap two numbers without using a third variable.
 10. Find the sum of digits of a number.
  */
