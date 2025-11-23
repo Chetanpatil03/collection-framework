@@ -82,6 +82,32 @@ public class ThirdTen {
     }
 
 
+    // finding the second largest element in array
+    public static int findSecondLargest(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            System.out.println("Array must contain at least two elements.");
+            return -1; // Or throw an IllegalArgumentException
+        }
+
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int num : arr) {
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+
+        if (secondLargest == Integer.MIN_VALUE) {
+            System.out.println("No distinct second largest element found.");
+            return -1; // Or handle as per requirements
+        }
+
+        return secondLargest;
+    }
 
 
     public static void main(String[] args) {
