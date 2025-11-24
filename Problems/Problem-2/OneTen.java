@@ -75,48 +75,7 @@ public class OneTen {
         return revString(s).equals(s);
     }
 
-
-
-    // que 8 - :: A -- factorial {Iterative}
-    public static int factorial_A(int n) {
-        int res = 1;
-        for (int i = 1; i <= n; i++) {
-            res += i;
-        }
-
-        return res;
-    }
-
-    // six:: B -- factorial{Recursive}
-    public static int factorial_B(int n) {
-        if (n <= 0 || n == 1) {
-            return 1;
-        } else {
-            return n * factorial_B(n - 1);
-        }
-    }
-
-    // finding sum of all array elements
-    public static int arraySum(int[] arr) {
-        int sum = 0;
-        for (int i : arr)
-            sum += i;
-        return sum;
-    }
-
-    // que - 10 :: to count the number of vowel in string
-    public static int countVowels(String s) {
-        int count = 0;
-        char[] charArray = s.toLowerCase().toCharArray();
-        for (char c : charArray) {
-            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
-                continue;
-            else
-                count++;
-        }
-        return count;
-    }
-
+    // que - seven :: counting vowels and cono
     public static ArrayList<Integer> countVowelsCons(String str) {
         int vowels = 0;
         int consonants = 0;
@@ -129,6 +88,30 @@ public class OneTen {
         }
         return new ArrayList<>(Arrays.asList(consonants, vowels));
     }
+
+
+
+    // que 8 - :: A -- factorial {Iterative}
+    public static int factorial_A(int n) {
+        int res = 1;
+        for (int i = 1; i <= n; i++) {
+            res += i;
+        }
+
+        return res;
+    }
+
+    // que - 8 :: B -- factorial{Recursive}
+    public static int factorial_B(int n) {
+        if (n <= 0 || n == 1) {
+            return 1;
+        } else {
+            return n * factorial_B(n - 1);
+        }
+    }
+
+    // ques - 9 :: swapping two number with out using third variable
+    
 
     // question number 10 :: finding sum of digits -- 512 --> 5+1+2 == 8
     public static int sumOfDigits(int digits) {
