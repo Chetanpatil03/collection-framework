@@ -71,12 +71,12 @@ public class SecondTen {
     }
 
     // number if prime of not
-    public static boolean isPrime(int a){
+    public static boolean isEven(int a){
         return a % 2 == 0;
     }
 
     // number if prime of not -- way two
-    public static String isPrime_B(int a){
+    public static String isEven_B(int a){
         return a % 2 == 0 ? "Prime" : "Not a prime";
     }
 

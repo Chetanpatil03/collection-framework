@@ -2,16 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class OneTen {
-       // one 
-    public static void printHelloWorld(){
-        System.out.println("Hello World!");
-    }
-
-    // two 
-    public static int addTwoNum(int a,int b){
-        return a + b;
-    }
-
+      
     //three
     public static String isEvenOrOdd(int a){
         if (a % 2 ==0) {
@@ -143,5 +134,5 @@ public class OneTen {
 -- 7. Count vowels and consonants in a string.
 -- 8. Find the factorial of a number.
 -- 9. Swap two numbers without using a third variable.
-10. Find the sum of digits of a number.
+-- 10. Find the sum of digits of a number.
  */
