@@ -111,7 +111,17 @@ public class OneTen {
     }
 
     // ques - 9 :: swapping two number with out using third variable
-    
+    public static void swapNums(int a, int b){
+        System.out.println("Before :: ");
+        System.out.println(" A :: "+a+", B :: "+b);
+        
+        b = a + b ; // 10 , 20 -->  b = 10 + 20 == 30
+        a = b - a; // a = 30 - 10 == 20; final value of a
+        b = b - a; // b = 30 - 20 == 10; final value of b
+        
+        System.out.println("After :: ");
+        System.out.println(" A :: "+a+", B :: "+b);
+    }
 
     // question number 10 :: finding sum of digits -- 512 --> 5+1+2 == 8
     public static int sumOfDigits(int digits) {
@@ -131,6 +141,8 @@ public class OneTen {
         System.out.println("Sum of Digits :: " + sumOfDigits(512));
 
         System.out.println("Fibonacci Series upto 10th term :: " + fibSeries(10));
+
+        swapNums(10,20);
     }
 }
 
