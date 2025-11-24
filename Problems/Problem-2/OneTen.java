@@ -24,7 +24,18 @@ public class OneTen {
         return a > b ?( a > c ? a : c) : b > c ? b : c; 
     }
 
-    
+    // que - 3 :: find given number is prime or not
+    public static boolean isPrime(int n){
+        if (n <= 0 || n == 1) return false;
+
+        for(int i = 2; i <= Math.sqrt(n); i++){
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 
     
     // seven
