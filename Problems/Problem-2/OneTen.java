@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class OneTen {
        // one 
     public static void printHelloWorld(){
@@ -99,9 +102,23 @@ public class OneTen {
         }
         return rev;
     }
+
+    public static ArrayList<Integer> countVowelsCons(String str){
+        int vowels = 0;
+        int consonants = 0;
+        char [] arr = str.trim().toCharArray();
+        for (char c : arr) {
+           if (c == 'a'|| c == 'e' || c== 'i'|| c == 'o'|| c=='u') vowels++;
+           else consonants++;
+        }
+
+        
+        return new ArrayList<>(Arrays.asList(consonants,vowels));
+    }
     
     public static void main(String[] args) {
         System.out.println("Reverse of [2548] :: "+revNumber(2548));
+        System.out.println("Number of consolents and vowels :: "+ countVowelsCons("Chetuuu"));
     }
 }
 
@@ -112,7 +129,7 @@ public class OneTen {
 -- 4. Print Fibonacci series up to N terms.
 -- 5. Reverse a number.
 -- 6. Check if a string is a palindrome.
-7. Count vowels and consonants in a string.
+-- 7. Count vowels and consonants in a string.
 -- 8. Find the factorial of a number.
 -- 9. Swap two numbers without using a third variable.
 10. Find the sum of digits of a number.
