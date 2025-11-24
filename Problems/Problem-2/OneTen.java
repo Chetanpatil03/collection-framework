@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class OneTen {
       
-    //three
+    //que - 1 :: find the given number is even/odd
     public static String isEvenOrOdd(int a){
         if (a % 2 ==0) {
             return "Even";
@@ -13,24 +13,35 @@ public class OneTen {
         }
     }
 
-    // four - A
+    // que - 2 :: finding greatest of all three numbers
     public static int greatesOfThree_A(int a,int b,int c){
         return Math.max(Math.max(a, b), c);
     }
-
-    //four - B
+    
+    //que - 2 {B}
+    // que - 2 :: finding greatest of all three numbers
     public static int greatesOfThree_B(int a,int b,int c){
         return a > b ?( a > c ? a : c) : b > c ? b : c; 
     }
 
-    // five
-    public static void multiplicationTable(int n){
-        for(int i = 1; i<=10;i++){
-            System.out.println(n+" * "+i+" = "+ n*i + "");
-        }
-    }
+    
 
-    // six:: A -- factorial {Iterative}
+    
+    // seven
+    public static String revString(String s){
+        return new StringBuffer(s).reverse().toString();
+    }
+    
+    //  que. eigth :: way - one
+    public static boolean isPallindrom(String s){
+        return new StringBuffer(s).reverse().toString().equals(s);
+    }
+    
+    // que. eigth :: way - two
+    public static boolean isPallindrom_B(String s){
+        return revString(s).equals(s);
+    }
+    // que 8 - :: A -- factorial {Iterative}
     public static int factorial_A(int n){
         int res = 1;
         for (int i = 1; i <= n; i++) {
@@ -49,22 +60,7 @@ public class OneTen {
             return n * factorial_B(n-1);
         }
     }
-
-    // seven
-    public static String revString(String s){
-        return new StringBuffer(s).reverse().toString();
-    }
-  
-    //  que. eigth :: way - one
-    public static boolean isPallindrom(String s){
-        return new StringBuffer(s).reverse().toString().equals(s);
-    }
-
-    // que. eigth :: way - two
-    public static boolean isPallindrom_B(String s){
-        return revString(s).equals(s);
-    }
-
+    
     // finding sum of all array elements
     public static int arraySum(int [] arr){
         int sum = 0;
