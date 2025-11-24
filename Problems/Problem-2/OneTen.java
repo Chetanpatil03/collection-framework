@@ -36,7 +36,7 @@ public class OneTen {
 
         return true;
     }
-
+    //ques - 4 ::  Print Fibonacci series up to N terms.
     public static ArrayList<Integer> fibSeries(int n) {
         int a = 0, b = 1;
         ArrayList<Integer> fibSeries = new ArrayList<>();
@@ -60,20 +60,22 @@ public class OneTen {
         return rev;
     }
 
-    // seven
+    // reversing a string
     public static String revString(String s) {
         return new StringBuffer(s).reverse().toString();
     }
 
-    // que. eigth :: way - one
+    // que. six :: cheking the string is pallindrom or not way - one
     public static boolean isPallindrom(String s) {
         return new StringBuffer(s).reverse().toString().equals(s);
     }
 
-    // que. eigth :: way - two
+    // que. six :: cheking the string is pallindrom or not way way - two
     public static boolean isPallindrom_B(String s) {
         return revString(s).equals(s);
     }
+
+
 
     // que 8 - :: A -- factorial {Iterative}
     public static int factorial_A(int n) {
