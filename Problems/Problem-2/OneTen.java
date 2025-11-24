@@ -90,8 +90,18 @@ public class OneTen {
         return count;
     }
 
+    // question number :: 5 - reverse a given number
+    public static int revNumber(int n){
+        int rev = 0;
+        while (n > 0) {
+            rev = rev * 10 + (n % 10);
+            n = n / 10;
+        }
+        return rev;
+    }
+    
     public static void main(String[] args) {
-        
+        System.out.println("Reverse of [2548] :: "+revNumber(2548));
     }
 }
 
@@ -100,7 +110,7 @@ public class OneTen {
 -- 2. Find the largest of three numbers.
 -- 3. Check if a number is prime.
 -- 4. Print Fibonacci series up to N terms.
-5. Reverse a number.
+-- 5. Reverse a number.
 -- 6. Check if a string is a palindrome.
 7. Count vowels and consonants in a string.
 -- 8. Find the factorial of a number.
