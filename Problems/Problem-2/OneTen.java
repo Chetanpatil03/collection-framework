@@ -111,14 +111,25 @@ public class OneTen {
            if (c == 'a'|| c == 'e' || c== 'i'|| c == 'o'|| c=='u') vowels++;
            else consonants++;
         }
-
-        
         return new ArrayList<>(Arrays.asList(consonants,vowels));
+    }
+
+    // question number 10 :: finding sum of digits -- 512 --> 5+1+2 == 8
+    public static int sumOfDigits(int digits){
+        int sum = 0;
+        while (digits > 0) {
+            sum = sum + digits % 10; 
+            digits = digits / 10;
+        }
+
+        return sum;
     }
     
     public static void main(String[] args) {
         System.out.println("Reverse of [2548] :: "+revNumber(2548));
         System.out.println("Number of consolents and vowels :: "+ countVowelsCons("Chetuuu"));
+
+        System.out.println("Sum of Digits :: "+sumOfDigits(512));
     }
 }
 
