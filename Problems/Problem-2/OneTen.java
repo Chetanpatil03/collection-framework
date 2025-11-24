@@ -37,6 +37,19 @@ public class OneTen {
         return true;
     }
 
+    public static ArrayList<Integer> fibSeries(int n){
+        int a = 0, b = 1;
+        ArrayList<Integer> fibSeries= new ArrayList<>();
+        for (int i = 1; i <= n; i++) {
+            fibSeries.add(a);
+            int sum = a + b;
+            a = b;
+            b = sum;
+        }
+
+        return fibSeries;
+    }
+
     
     // seven
     public static String revString(String s){
@@ -128,6 +141,8 @@ public class OneTen {
         System.out.println("Number of consolents and vowels :: "+ countVowelsCons("Chetuuu"));
 
         System.out.println("Sum of Digits :: "+sumOfDigits(512));
+
+        System.out.println("Fibonacci Series upto 10th term :: "+ fibSeries(10));
     }
 }
 
