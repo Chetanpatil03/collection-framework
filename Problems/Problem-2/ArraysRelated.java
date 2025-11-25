@@ -31,7 +31,7 @@ public class ArraysRelated {
     }
 
     // 9. Check if two arrays are equal.
-    public static boolean idArraysEqual(int []arr, int []arr2){
+    public static boolean isArraysEqual(int []arr, int []arr2){
         if (arr.length == arr2.length) return false;
         Arrays.sort(arr);
         Arrays.sort(arr2);
@@ -41,6 +41,7 @@ public class ArraysRelated {
     public static void main(String[] args) {
         int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
         System.out.println("Minimum and Maximum element :: "+minMaxElement(arr));
+        System.out.println("Compare : "+isArraysEqual(arr, arr));
     }
 }
 
