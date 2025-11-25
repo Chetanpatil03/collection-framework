@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class ArraysRelated {
 
     // Que - 1 Find min and max element in array
@@ -12,6 +15,18 @@ public class ArraysRelated {
         int max = arr[0];
         for(int i : arr) if (max < i) max = i;
         return max;
+    }
+
+    // combined approch
+    public static Map<String,Integer> minMaxElement(int []arr){
+        int min = arr[0]; 
+        int max = arr[0];
+        for (int i : arr) {
+            if (max < i) max = i;
+            if (min > i) min = i;
+        }
+
+        return Map.of("Minimun", min, "Maximum",max);
     }
 
     public static void main(String[] args) {
