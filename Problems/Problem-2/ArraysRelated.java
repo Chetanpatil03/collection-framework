@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,6 +28,14 @@ public class ArraysRelated {
         }
 
         return Map.of("Minimum :", min, "Maximum :",max);
+    }
+
+    // 9. Check if two arrays are equal.
+    public static boolean idArraysEqual(int []arr, int []arr2){
+        if (arr.length == arr2.length) return false;
+        Arrays.sort(arr);
+        Arrays.sort(arr2);
+        return Arrays.equals(arr, arr2);
     }
 
     public static void main(String[] args) {
