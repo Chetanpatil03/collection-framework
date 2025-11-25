@@ -1,10 +1,17 @@
 public class ArraysRelated {
 
     // Que - 1 Find min and max element in array
-    public static int min(int []arr){
+    public static int minElement(int []arr){
         int min = arr[0];
         for(int i : arr) if (min > i) min = i;
         return min;
+    }
+
+    // finding max element : 
+    public static int maxElement(int []arr){
+        int max = arr[0];
+        for(int i : arr) if (max < i) max = i;
+        return max;
     }
 
     public static void main(String[] args) {
