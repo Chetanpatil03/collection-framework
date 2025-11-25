@@ -26,19 +26,20 @@ public class ArraysRelated {
             if (min > i) min = i;
         }
 
-        return Map.of("Minimun", min, "Maximum",max);
+        return Map.of("Minimum :", min, "Maximum :",max);
     }
 
     public static void main(String[] args) {
-        
+        int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
+        System.out.println("Minimum and Maximum element :: "+minMaxElement(arr));
     }
 }
 
 /*# 
 🔥 **Array Coding Questions**
 
-1. Find the largest and smallest number in an array.
-2. Reverse an array.
+-- 1. Find the largest and smallest number in an array.
+-- 2. Reverse an array.
 3. Find the missing number in an array of 1 to N.
 4. Remove duplicate elements from an array.
 5. Find the second largest number in an array.
