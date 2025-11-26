@@ -15,7 +15,7 @@ It includes examples of different collection classes like **List**, **Map**, and
 
 
 ## 🎯 Purpose
-This repo is created for **my own learning and hands-on practice** with Java Collections, and other concepts like (Arrays, Recursion, Conditions etc)
+This repo is created for **my own learning and hands-on practice** with Java Collections(Like AarrayList, HashMap, Streams, etc), and other concepts like (Arrays, Recursion, Conditions etc)
 
 ---
 
