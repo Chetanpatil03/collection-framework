@@ -10,7 +10,8 @@ It includes examples of different collection classes like **List**, **Map**, and
 - **Questions/** – Practice questions for List and Map.  
 - **Queue/** – Practice questions for Queue, Priority Queue etc.  
 - **Sets/** – Programs on Set,HashSet, LinkedHashSet, TreeSet, etc.  
-- **Streams/** – Programs on Intermediate and Terminal Operations, Collectors, Parallel Streams, Question etc.  
+- **Streams/** – Programs on Intermediate and Terminal Operations, Collectors, Parallel Streams, Question etc.
+- **Practice/** - Programs for practicing other questions.
 
 
 ## 🎯 Purpose
