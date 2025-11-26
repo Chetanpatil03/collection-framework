@@ -11,7 +11,7 @@ It includes examples of different collection classes like **List**, **Map**, and
 - **Queue/** – Practice questions for Queue, Priority Queue etc.  
 - **Sets/** – Programs on Set,HashSet, LinkedHashSet, TreeSet, etc.  
 - **Streams/** – Programs on Intermediate and Terminal Operations, Collectors, Parallel Streams, Question etc.
-- **Practice/** - Programs for practicing other questions.
+- **Practice/** - Programs for practicing other questions. Every folder have ```base.txt``` file.
 
 
 ## 🎯 Purpose
