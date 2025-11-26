@@ -14,7 +14,7 @@ It includes examples of different collection classes like **List**, **Map**, and
 
 
 ## 🎯 Purpose
-This repo is created for **my own learning and hands-on practice** with Java Collections.
+This repo is created for **my own learning and hands-on practice** with Java Collections, and other concepts.
 
 ---
 
