@@ -48,6 +48,17 @@ public class ArraysRelated {
         return map;
     }
 
+    // merge two arrays into single array
+    public static ArrayList<Integer> mergeTwoArray(int []arr, int []arr2){
+        ArrayList<Integer> list = new ArrayList<>();
+        Arrays.sort(arr);
+        Arrays.sort(arr2);
+
+        for (int i : arr) list.add(i);
+        for (int i : arr2) list.add(i);
+        return list;
+    }
+
     public static void main(String[] args) {
         int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
         System.out.println("Minimum and Maximum element :: "+minMaxElement(arr));
@@ -65,7 +76,7 @@ public class ArraysRelated {
 5. Find the second largest number in an array.
 -- 6. Find the frequency of each element in an array.
 7. Rotate an array (left/right).
-8. Merge two sorted arrays into a single sorted array.
+-- 8. Merge two sorted arrays into a single sorted array.
 9. Check if two arrays are equal.
 10. Find pairs in an array whose sum is equal to a given number.
  */
