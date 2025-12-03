@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -38,6 +39,15 @@ public class ArraysRelated {
         return Arrays.equals(arr, arr2);
     }
 
+    public static HashMap<Integer,Integer> findFrequency(ArrayList<Integer> list){
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for (Integer integer : list) {
+            map.put(integer, map.getOrDefault(map, 0) + 1);
+        }
+
+        return map;
+    }
+
     public static void main(String[] args) {
         int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
         System.out.println("Minimum and Maximum element :: "+minMaxElement(arr));
@@ -53,7 +63,7 @@ public class ArraysRelated {
 3. Find the missing number in an array of 1 to N.
 4. Remove duplicate elements from an array.
 5. Find the second largest number in an array.
-6. Find the frequency of each element in an array.
+-- 6. Find the frequency of each element in an array.
 7. Rotate an array (left/right).
 8. Merge two sorted arrays into a single sorted array.
 9. Check if two arrays are equal.
