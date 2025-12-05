@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 public class ArraysRelated {
@@ -59,6 +60,17 @@ public class ArraysRelated {
         return list;
     }
 
+    // remove duplicate elements
+    public static void removeDuplicates(int []arr){
+        ArrayList<Integer> list = new ArrayList<>();
+        Arrays.stream(arr).forEach(x->{
+            list.add(x);
+        });
+
+        HashSet<Integer> set = new HashSet<>(list);
+        System.out.println("Unique elements"+set);
+    }
+
     public static void main(String[] args) {
         int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
         System.out.println("Minimum and Maximum element :: "+minMaxElement(arr));
@@ -72,7 +84,7 @@ public class ArraysRelated {
 -- 1. Find the largest and smallest number in an array.
 -- 2. Reverse an array.
 3. Find the missing number in an array of 1 to N.
-4. Remove duplicate elements from an array.
+-- 4. Remove duplicate elements from an array.
 5. Find the second largest number in an array.
 -- 6. Find the frequency of each element in an array.
 7. Rotate an array (left/right).
