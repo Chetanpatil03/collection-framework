@@ -66,15 +66,28 @@ public class ArraysRelated {
         Arrays.stream(arr).forEach(x->{
             list.add(x);
         });
+        list.sort(null);
 
-        HashSet<Integer> set = new HashSet<>(list);
-        System.out.println("Unique elements"+set);
+        ArrayList<Integer> unique_list = new ArrayList<>(new HashSet<>(list));
+        unique_list.sort(null);
+        System.out.println("Unique elements" + unique_list);
+    }
+
+    public static void printArr(int []arr){
+        Arrays.sort(arr);
+        System.out.print("Array :: [ ");
+        for (int i : arr) {
+            System.out.print(i+" ");
+        }
+        System.out.print(" ] \n");
     }
 
     public static void main(String[] args) {
         int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
         System.out.println("Minimum and Maximum element :: "+minMaxElement(arr));
         System.out.println("Compare : "+isArraysEqual(arr, arr));
+        printArr(arr);
+        removeDuplicates(arr);
     }
 }
 
