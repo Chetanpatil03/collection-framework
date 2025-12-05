@@ -90,15 +90,5 @@ public class ArraysRelated {
 7. Rotate an array (left/right).
 -- 8. Merge two sorted arrays into a single sorted array.
 9. Check if two arrays are equal.
-
-
-
-coinadoinzx
-aopvhpn
-sfeibs
-
-tiob
-
-asvasb
 10. Find pairs in an array whose sum is equal to a given number.
  */
