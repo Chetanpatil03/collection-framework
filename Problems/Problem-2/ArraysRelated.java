@@ -90,6 +90,8 @@ public class ArraysRelated {
         return list;
     }
 
+    
+
     public static void main(String[] args) {
         int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
         int [] arr_one = {1,2,3,5,6,8,9,11,13,15,19};
@@ -113,6 +115,6 @@ public class ArraysRelated {
 -- 6. Find the frequency of each element in an array.
 7. Rotate an array (left/right).
 -- 8. Merge two sorted arrays into a single sorted array.
-9. Check if two arrays are equal.
+-- 9. Check if two arrays are equal.
 10. Find pairs in an array whose sum is equal to a given number.
  */
