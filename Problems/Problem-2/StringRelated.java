@@ -18,11 +18,8 @@ public class StringRelated {
         String [] arr = string.split(" ");
         String temp = arr[0];
         for (String str : arr) {
-            if (str.length() >= temp.length() ) {
-                temp = str;
-            }
+            if (str.length() >= temp.length()) temp = str;
         }
-
         return temp;
     }
 
