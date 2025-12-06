@@ -82,12 +82,23 @@ public class ArraysRelated {
         System.out.print(" ] \n");
     }
 
+    public static ArrayList<Integer> findMissingNumber(int []arr,int n){
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 1; i <= n; i++) list.add(i);
+        for (int i : arr) list.remove(Integer.valueOf(i));
+
+        return list;
+    }
+
     public static void main(String[] args) {
         int [] arr = {1,5,8,6,8,9,5,7,6,9,2,67,6,2,94,-52,14,996,-94};
+        int [] arr_one = {1,2,3,5,6,8,9,11,13,15,19};
         System.out.println("Minimum and Maximum element :: "+minMaxElement(arr));
         System.out.println("Compare : "+isArraysEqual(arr, arr));
         printArr(arr);
         removeDuplicates(arr);
+
+        System.out.println("Array List :: "+findMissingNumber(arr_one, 20));
     }
 }
 
@@ -96,7 +107,7 @@ public class ArraysRelated {
 
 -- 1. Find the largest and smallest number in an array.
 -- 2. Reverse an array.
-3. Find the missing number in an array of 1 to N.
+-- 3. Find the missing number in an array of 1 to N.
 -- 4. Remove duplicate elements from an array.
 5. Find the second largest number in an array.
 -- 6. Find the frequency of each element in an array.
