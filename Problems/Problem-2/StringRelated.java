@@ -13,8 +13,21 @@ public class StringRelated {
 
     }
 
+    // longest word in string
+    public static String longestWord(String string){
+        String [] arr = string.split(" ");
+        String temp = arr[0];
+        for (String str : arr) {
+            if (str.length() >= temp.length() ) {
+                temp = str;
+            }
+        }
+
+        return temp;
+    }
+
     public static void main(String[] args) {
-        
+        System.out.println("Longest word :: "+longestWord("Chetan bachchhav mca"));
     }
 }
 
@@ -29,6 +42,6 @@ public class StringRelated {
 6. Find duplicate characters in a string.
 7. Check if a string contains only digits.
 8. Convert a string to a number without using built-in parsing.
-9. Find the longest word in a sentence.
+-- 9. Find the longest word in a sentence.
 10. Capitalize the first letter of each word.
  */
