@@ -21,7 +21,7 @@ public class FirstTen {
 3. Convert Celsius to Fahrenheit.
 4. Check if a character is a vowel, consonant, digit, or special character.
 5. Count positive, negative, and zero values from an input list.
-6. Find the largest and smallest digit in a number.
+-- 6. Find the largest and smallest digit in a number.
 7. Convert lowercase string to uppercase (without using built-in).
 8. Print multiplication table of a number.
 9. Calculate power of a number without using Math.pow().
