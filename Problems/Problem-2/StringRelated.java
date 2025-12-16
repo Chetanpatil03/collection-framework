@@ -56,21 +56,22 @@ public class StringRelated {
     public static void main(String[] args) {
         System.out.println("Longest word :: "+longestWord("Chetan bachchhav mca"));
         System.out.println("String without white spaces :: "+removeAllWhiteSpaces("Chetan bachhav 1 2 3"));
-        
+
+        System.out.println("Reversed string :: "+revString("Chetan"));
     }
 }
 
 /*
 # 🧵 **String Coding Questions**
 
-1. Reverse a string without using built-in functions.
+-- 1. Reverse a string without using built-in functions.
 2. Count occurrences of each character in a string.
 -- 3. Check if two strings are anagrams.
 -- 4. Remove all white spaces from a string.
 5. Find the first non-repeating character in a string.
 6. Find duplicate characters in a string.
 -- 7. Check if a string contains only digits.
-8. Convert a string to a number without using built-in parsing.
+-- 8. Convert a string to a number without using built-in parsing.
 -- 9. Find the longest word in a sentence.
 10. Capitalize the first letter of each word.
  */
