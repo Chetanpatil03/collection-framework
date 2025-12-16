@@ -52,12 +52,26 @@ public class StringRelated {
         return new String(arr);
     }
 
+    // Capitalize the first letter of each word
+    public static String capitalizeEachWord(String str){
+        String [] arr = str.split(" ");
+        StringBuffer capitalizedWord = new StringBuffer();
+
+        for (String string : arr) {
+            String firstLetter = string.substring(0,1).toUpperCase();
+            String otherWord = string.substring(1).toLowerCase();
+            capitalizedWord.append(" ").append(firstLetter + otherWord);
+        }
+
+        return capitalizedWord.toString();
+    }
 
     public static void main(String[] args) {
         System.out.println("Longest word :: "+longestWord("Chetan bachchhav mca"));
         System.out.println("String without white spaces :: "+removeAllWhiteSpaces("Chetan bachhav 1 2 3"));
 
         System.out.println("Reversed string :: "+revString("Chetan"));
+        System.out.println("Capatalized string :: "+capitalizeEachWord("CHETAN BACHCHHAV MCA"));
     }
 }
 
@@ -73,5 +87,5 @@ public class StringRelated {
 -- 7. Check if a string contains only digits.
 -- 8. Convert a string to a number without using built-in parsing.
 -- 9. Find the longest word in a sentence.
-10. Capitalize the first letter of each word.
+-- 10. Capitalize the first letter of each word.
  */
