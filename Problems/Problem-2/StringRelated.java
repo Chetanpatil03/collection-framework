@@ -2,6 +2,17 @@ import java.util.Arrays;
 
 public class StringRelated {
 
+    // Check if a string contains only digits.
+    public static void isOnlyDigits(String str){
+        try {
+            int i = Integer.parseInt(str);
+            System.out.println("Converted integer: " + i); // Output: Converted integer: 123
+        } catch (NumberFormatException e) {
+            System.out.println("Invalid number format for input: " + str);
+            e.printStackTrace();
+        }
+    }
+
     public static boolean isAnagrams(String str_one,String str_two){
         char [] arr_one = str_one.toCharArray();
         char [] arr_two = str_two.toCharArray();
@@ -37,7 +48,7 @@ public class StringRelated {
 4. Remove all white spaces from a string.
 5. Find the first non-repeating character in a string.
 6. Find duplicate characters in a string.
-7. Check if a string contains only digits.
+-- 7. Check if a string contains only digits.
 8. Convert a string to a number without using built-in parsing.
 -- 9. Find the longest word in a sentence.
 10. Capitalize the first letter of each word.
