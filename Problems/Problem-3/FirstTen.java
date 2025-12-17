@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class FirstTen {
     // Print numbers from 1 to 100 without using loops.
@@ -8,6 +11,17 @@ public class FirstTen {
             System.out.print(n+" ");
             printNum(n+1);
         }
+    }
+
+    // Count positive, negative, and zero values from an input list.
+    public static Map<String, Integer> countNums(List<Integer> list){
+        int zeros = 0,pos = 0, neg = 0;
+        for (Integer i : list) {
+            if (i == 0) zeros++;
+            else if (i > 0) pos++;
+            if (i < 0) neg++;
+        }
+        return Map.of("Postives",pos,"Zeros",zeros,"Negative",neg);
     }
 
     public static int averageOfN(ArrayList<Integer> list){
@@ -26,6 +40,8 @@ public class FirstTen {
         printNum(1);
 
         System.out.println("Average of N :: "+averageOfN(new ArrayList<>(Arrays.asList(12,58,67,69,6,8,9,86,6,65,8,9,6,6,56,46,54))));
+
+        System.out.println("Result :: "+countNums(Arrays.asList(12,5,6,9,9,6,-19,57,-14,0,8,-95,6,-6,59,5,-7,62,-6,26,-56,0,0,20)));
     }
 }
 
@@ -36,7 +52,7 @@ public class FirstTen {
 -- 2. Find the average of N numbers.
 3. Convert Celsius to Fahrenheit.
 4. Check if a character is a vowel, consonant, digit, or special character.
-5. Count positive, negative, and zero values from an input list.
+-- 5. Count positive, negative, and zero values from an input list.
 -- 6. Find the largest and smallest digit in a number.
 7. Convert lowercase string to uppercase (without using built-in).
 8. Print multiplication table of a number.
