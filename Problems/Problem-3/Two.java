@@ -9,9 +9,21 @@ public class Two {
             System.out.println();
         }
     }
+
+    // 12. Print a pyramid number pattern.
+    public static void pyramidNumber(int n){
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void main(String[] args) {
         triangle(4);
-        triangle(9);
+        pyramidNumber(9);
     }
 }
 
