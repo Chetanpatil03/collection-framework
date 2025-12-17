@@ -12,9 +12,24 @@ public class Two {
 
     // 12. Print a pyramid number pattern.
     public static void pyramidNumber(int n){
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j+" ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k <= i ; k++) {
+                System.out.print(k+1+" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void pyramidStars(int n){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k <= i ; k++) {
+                System.out.print("* ");
             }
             System.out.println();
         }
@@ -23,7 +38,8 @@ public class Two {
 
     public static void main(String[] args) {
         triangle(4);
-        pyramidNumber(9);
+        pyramidNumber(5);
+        pyramidStars(5);
     }
 }
 
