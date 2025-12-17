@@ -35,6 +35,14 @@ public class FirstTen {
         return sum / n;
     }
 
+    public static void printMultiplicationTable(int n){
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n+"  *  "+i+"  := "+(n*i));
+        }
+    }
+
+    
+
     public static void main(String[] args) {
         System.out.println("Sequence ::  ");
         printNum(1);
@@ -42,6 +50,9 @@ public class FirstTen {
         System.out.println("Average of N :: "+averageOfN(new ArrayList<>(Arrays.asList(12,58,67,69,6,8,9,86,6,65,8,9,6,6,56,46,54))));
 
         System.out.println("Result :: "+countNums(Arrays.asList(12,5,6,9,9,6,-19,57,-14,0,8,-95,6,-6,59,5,-7,62,-6,26,-56,0,0,20)));
+
+        System.out.println("Multiplication table of 8 :: ");
+        printMultiplicationTable(8);
     }
 }
 
@@ -55,9 +66,9 @@ public class FirstTen {
 -- 5. Count positive, negative, and zero values from an input list.
 -- 6. Find the largest and smallest digit in a number.
 7. Convert lowercase string to uppercase (without using built-in).
-8. Print multiplication table of a number.
+-- 8. Print multiplication table of a number.
 9. Calculate power of a number without using Math.pow().
-10. Print all factors of a number.
+-- 10. Print all factors of a number.
  */
 
 
