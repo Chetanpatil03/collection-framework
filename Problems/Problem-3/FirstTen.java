@@ -40,8 +40,12 @@ public class FirstTen {
             System.out.println(n+"  *  "+i+"  := "+(n*i));
         }
     }
-
-    
+    // Print all factors of a number.
+    public static void printAllFactorsOfNum(int n){
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) System.out.println(i);
+        }
+    }
 
     public static void main(String[] args) {
         System.out.println("Sequence ::  ");
@@ -53,6 +57,9 @@ public class FirstTen {
 
         System.out.println("Multiplication table of 8 :: ");
         printMultiplicationTable(8);
+
+        System.out.println("All factors of number [54]");
+        printAllFactorsOfNum(54);
     }
 }
 
