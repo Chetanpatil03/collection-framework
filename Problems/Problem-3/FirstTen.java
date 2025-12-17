@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class FirstTen {
     // Print numbers from 1 to 100 without using loops.
@@ -11,6 +12,7 @@ public class FirstTen {
 
     public static int averageOfN(ArrayList<Integer> list){
         int n = list.size();
+        System.out.println("\n\nSize of N :: "+n);
         int sum = 0;
         for (Integer integer : list) {
             sum += integer;
@@ -23,7 +25,7 @@ public class FirstTen {
         System.out.println("Sequence ::  ");
         printNum(1);
 
-        
+        System.out.println("Average of N :: "+averageOfN(new ArrayList<>(Arrays.asList(12,58,67,69,6,8,9,86,6,65,8,9,6,6,56,46,54))));
     }
 }
 
