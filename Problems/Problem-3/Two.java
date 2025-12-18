@@ -36,10 +36,30 @@ public class Two {
     }
 
 
+    // 13. Print a hollow square pattern.
+    public static void hollowSquare(int n){
+        int start = 1, end = n;
+        for (int i = 1; i <= end; i++) {
+            for (int j = 1; j <=end; j++) {
+                if (j == start || j== end || i == start || i == end)
+                    System.out.print(" * ");
+                else 
+                    System.out.print("   ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         triangle(4);
+        System.out.println("*****************************\n");
         pyramidNumber(5);
+        System.out.println("*****************************\n");
         pyramidStars(5);
+
+        System.out.println("*****************************\n");
+        hollowSquare(5);
+        System.out.println("*****************************\n");
     }
 }
 
