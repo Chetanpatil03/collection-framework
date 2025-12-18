@@ -49,6 +49,17 @@ public class Two {
             System.out.println();
         }
     }
+    // 14. Print Floyd’s triangle.
+    public static void floyTriangle(int n){
+        int curr = 1;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(curr+"  ");
+                curr++;
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args) {
         triangle(4);
@@ -60,6 +71,8 @@ public class Two {
         System.out.println("*****************************\n");
         hollowSquare(5);
         System.out.println("*****************************\n");
+
+        floyTriangle(4);
     }
 }
 
