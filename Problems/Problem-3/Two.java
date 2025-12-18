@@ -77,9 +77,9 @@ public class Two {
 }
 
 /*
-11. Print a triangle pattern of stars.
-12. Print a pyramid number pattern.
-13. Print a hollow square pattern.
-14. Print Floyd’s triangle.
+-- 11. Print a triangle pattern of stars.
+-- 12. Print a pyramid number pattern.
+-- 13. Print a hollow square pattern.
+-- 14. Print Floyd’s triangle.
 15. Print Pascal's triangle.
  */
