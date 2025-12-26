@@ -15,13 +15,22 @@ public class Three {
     public static void main(String[] args) {
         int []arr = {12,59,4,59,14,9,841,8,9,51,48,54,18,5,4,19,685,41};
         System.out.println("Even and Odd Count :: "+countEvenODD(arr));
+        System.out.println("Summ and Average :: "+calculateSumAvg(arr));
+    }
+
+    public static Map<String,Integer> calculateSumAvg(int []arr){
+        int sum = 0;
+        for (int i : arr) sum +=i;
+        int avg = sum / arr.length;
+
+        return Map.of("Average :",avg, "Sum :",sum);
     }
 }
 
 /*
-16. Count even and odd numbers in an array.
-17. Find the number of elements greater than a given value.
-18. Calculate sum + average of array elements.
+-- 16. Count even and odd numbers in an array.
+-- 17. Find the number of elements greater than a given value.
+-- 18. Calculate sum + average of array elements.
 19. Create a new array containing only even numbers.
 20. Multiply all elements of an array.
  */
