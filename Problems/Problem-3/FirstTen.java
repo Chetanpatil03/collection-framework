@@ -57,6 +57,15 @@ public class FirstTen {
         return (fhr - 32) * 5/9;
     }
 
+    public static long calculatePower(int n, int pow){
+        long res = 1;
+        for (int i = 1; i <= pow; i++) {
+            res *= n;
+        }
+
+        return res;
+    }
+
     public static void main(String[] args) {
         System.out.println("Sequence ::  ");
         printNum(1);
@@ -74,6 +83,8 @@ public class FirstTen {
         System.out.println("Celcius to Fahreheit (14 C) :: "+celsiusTFahrenheit(14));
         System.out.println("Fahreheit to Celcius (274 F) :: "+fahrenheitTOCelsius(274));
 
+        System.out.println("Finding power of 3 rest 9 :: "+calculatePower(3, 9));
+        System.out.println("Finding power of 3 rest 9 :: "+Math.pow(3, 9));
         
     }
 }
@@ -83,13 +94,13 @@ public class FirstTen {
 
 -- 1. Print numbers from 1 to 100 without using loops.
 -- 2. Find the average of N numbers.
-3. Convert Celsius to Fahrenheit.
+-- 3. Convert Celsius to Fahrenheit.
 4. Check if a character is a vowel, consonant, digit, or special character.
 -- 5. Count positive, negative, and zero values from an input list.
 -- 6. Find the largest and smallest digit in a number.
 7. Convert lowercase string to uppercase (without using built-in).
 -- 8. Print multiplication table of a number.
-9. Calculate power of a number without using Math.pow().
+-- 9. Calculate power of a number without using Math.pow().
 -- 10. Print all factors of a number.
  */
 
