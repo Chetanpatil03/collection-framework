@@ -47,6 +47,16 @@ public class FirstTen {
         }
     }
 
+    // Convert Celsius to Fahrenheit.
+    public static double celsiusTFahrenheit(double cel){
+        return (cel * 9/5) + 32;
+        // return (0°F − 32) × 5/9 = -17.78°C -- fahrenheit to celcius
+    }
+    
+    public static double fahrenheitTOCelsius(double fhr){
+        return (fhr - 32) * 5/9;
+    }
+
     public static void main(String[] args) {
         System.out.println("Sequence ::  ");
         printNum(1);
@@ -60,6 +70,11 @@ public class FirstTen {
 
         System.out.println("All factors of number [54]");
         printAllFactorsOfNum(54);
+
+        System.out.println("Celcius to Fahreheit (14 C) :: "+celsiusTFahrenheit(14));
+        System.out.println("Fahreheit to Celcius (274 F) :: "+fahrenheitTOCelsius(274));
+
+        
     }
 }
 
