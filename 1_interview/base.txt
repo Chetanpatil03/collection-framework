@@ -1,0 +1,6 @@
+
+Top interview Questions that are asked in an java interview 
+
+- Find the sum of array element
+- Find the largest element in an array
+- 
