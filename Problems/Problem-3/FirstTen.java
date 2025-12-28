@@ -87,6 +87,14 @@ public class FirstTen {
         System.out.println("Finding power of 3 rest 9 :: "+Math.pow(3, 9));
         
     }
+
+    public static String isChar(char c){
+        if (c == 'a'|| c == 'e'||c=='i'||c=='o'||c=='u'||c=='A'||c=='E'||c=='I'||c=='O'||c=='U') {
+            return "Vowels";
+        }
+
+        return "None";
+    }
 }
 
 /*
@@ -95,7 +103,7 @@ public class FirstTen {
 -- 1. Print numbers from 1 to 100 without using loops.
 -- 2. Find the average of N numbers.
 -- 3. Convert Celsius to Fahrenheit.
-4. Check if a character is a vowel, consonant, digit, or special character.
+-- 4. Check if a character is a vowel, consonant, digit, or special character.
 -- 5. Count positive, negative, and zero values from an input list.
 -- 6. Find the largest and smallest digit in a number.
 7. Convert lowercase string to uppercase (without using built-in).
