@@ -88,6 +88,9 @@ public class FirstTen {
 
         System.out.println("The character is [@] :: ");
         isChar('9');
+
+        System.out.println("Original [Hello World!] :: Result :: "+upperCase("Hello World!"));
+        System.out.println("Original [HEY BUDDY!] :: Result :: "+lowerCase("HEY BUDDY!"));
         
     }
 // Check if a character is a vowel, consonant, digit, or special character
@@ -117,6 +120,40 @@ public class FirstTen {
             }
         }
     }
+
+    public static String upperCase(String input){
+        String result = "";
+
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+
+            if (ch >= 'a' && ch <= 'z') {
+                result += (char) (ch - 32);
+            }
+            else{
+                result += ch;
+            }
+        }
+
+        return result;
+    }
+
+    public static String lowerCase(String input){
+        String result = "";
+
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+
+            if (ch >= 'A' && ch <= 'Z') {
+                result += (char) (ch + 32);
+            }
+            else{
+                result += ch;
+            }
+        }
+
+        return result;
+    }
 }
 
 /*
@@ -128,7 +165,7 @@ public class FirstTen {
 -- 4. Check if a character is a vowel, consonant, digit, or special character.
 -- 5. Count positive, negative, and zero values from an input list.
 -- 6. Find the largest and smallest digit in a number.
-7. Convert lowercase string to uppercase (without using built-in).
+-- 7. Convert lowercase string to uppercase (without using built-in).
 -- 8. Print multiplication table of a number.
 -- 9. Calculate power of a number without using Math.pow().
 -- 10. Print all factors of a number.
