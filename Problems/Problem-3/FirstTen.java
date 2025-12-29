@@ -85,10 +85,13 @@ public class FirstTen {
 
         System.out.println("Finding power of 3 rest 9 :: "+calculatePower(3, 9));
         System.out.println("Finding power of 3 rest 9 :: "+Math.pow(3, 9));
+
+        System.out.println("The character is [@] :: ");
+        isChar('9');
         
     }
 // Check if a character is a vowel, consonant, digit, or special character
-    public static String isChar(char c){
+    public static void isChar(char c){
 
         char ch = String.valueOf(c).toLowerCase().toCharArray()[0];
 
@@ -98,7 +101,7 @@ public class FirstTen {
                     System.out.println("It's Vowel");
                 }
                 else{
-                    System.out.println("It's Consolent");
+                    System.out.println("It's Consonant");
                 }
             }
             else{
@@ -113,8 +116,6 @@ public class FirstTen {
                 System.out.println("Special Character");
             }
         }
-
-        return "None";
     }
 }
 
