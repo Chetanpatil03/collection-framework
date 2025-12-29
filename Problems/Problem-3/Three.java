@@ -23,6 +23,8 @@ public class Three {
             System.out.print(i+" ");
         }
         System.out.println();
+
+        System.out.println("Multiplication :: "+mulitplyElements(arr));
     }
 
     public static Map<String,Integer> calculateSumAvg(int []arr){
@@ -36,6 +38,17 @@ public class Three {
     public static int[] onlyEvens(int []arr){
             return Arrays.stream(arr).filter(x -> x%2 == 0).toArray();
     }
+
+    public static int[] onlyOdds(int []arr){
+            return Arrays.stream(arr).filter(x -> x%2 != 0).toArray();
+    }
+
+    public static long mulitplyElements(int []arr){
+        long result = 1;
+        for (int i : arr) result *= (long)i;
+
+        return result;
+    }
 }
 
 /*
@@ -43,5 +56,5 @@ public class Three {
 -- 17. Find the number of elements greater than a given value.
 -- 18. Calculate sum + average of array elements.
 -- 19. Create a new array containing only even numbers.
-20. Multiply all elements of an array.
+-- 20. Multiply all elements of an array.
  */
