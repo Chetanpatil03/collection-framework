@@ -15,12 +15,15 @@ public class Strings {
     public static void main(String[] args) {
         String name = "Chetan chudaman bachchhav";
         System.out.println("Substring :: "+mySubString(name, 0, 6));
+        System.out.println("Substring :: "+mySubString(name, 7, 15));
+        System.out.println("Substring :: "+mySubString(name, 16, name.length()));
+
     }
     
 }
 
 /*
-6. Implement your own `substring()` method.
+-- 6. Implement your own `substring()` method.
 7. Check if a string is a valid palindrome after removing non-alphanumeric characters.
 8. Longest palindrome substring (medium difficulty).
 9. Check if two strings are isomorphic.
