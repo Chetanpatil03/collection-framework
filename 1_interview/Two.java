@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.stream.Stream;
 
 public class Two {
     public static void main(String[] args) {
@@ -8,6 +7,11 @@ public class Two {
 
         int max = Arrays.stream(arr).max().getAsInt();
         System.out.println("Max : "+max);
+
+        int min = Arrays.stream(arr).min().getAsInt();
+        System.out.println("Min :: "+min);
+
+        min(arr);
     }
     
     public static void max(int [] arr){
@@ -17,7 +21,17 @@ public class Two {
                 max = i;
             }
         }
-
         System.out.println("Largest element :: "+max);
     }
+    public static void min(int [] arr){
+        int min = arr[0];
+        for (int i : arr) {
+            if (i < min) {
+                min = i;
+            }
+        }
+        System.out.println("Smallest element :: "+min);
+    }
+
+
 }
