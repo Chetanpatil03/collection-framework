@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Two {
     public static void main(String[] args) {
@@ -33,5 +34,19 @@ public class Two {
         System.out.println("Smallest element :: "+min);
     }
 
+    public HashMap<String, Integer> minMax(int []arr){
+        int min = arr[0];
+        int max = arr[0];
+        for (int i : arr) {
+            if (i < min) {
+                min = i;
+            }
+            if (i > max) {
+                max = i;
+            }
+        }
+
+        return new HashMap<>()
+    }
 
 }
