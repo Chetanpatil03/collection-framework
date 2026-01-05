@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.Map;
 
 public class Two {
     public static void main(String[] args) {
@@ -11,8 +11,9 @@ public class Two {
 
         int min = Arrays.stream(arr).min().getAsInt();
         System.out.println("Min :: "+min);
-
         min(arr);
+
+        System.out.println("min and max "+minMax(arr));
     }
     
     public static void max(int [] arr){
@@ -34,7 +35,7 @@ public class Two {
         System.out.println("Smallest element :: "+min);
     }
 
-    public HashMap<String, Integer> minMax(int []arr){
+    public static Map<String, Integer> minMax(int []arr){
         int min = arr[0];
         int max = arr[0];
         for (int i : arr) {
@@ -46,7 +47,7 @@ public class Two {
             }
         }
 
-        return new HashMap<>()
+        return Map.of("Maximum :",max,"Minimum :",min);
     }
 
 }
