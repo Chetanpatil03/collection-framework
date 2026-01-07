@@ -20,15 +20,16 @@ class Three {
 		System.out.println("+---------+--------------------+--------------------+---------------+----------+");
 	}
     public static void main(String[] args) {
-        printUser();
+		printUser();
 		ArrayList<String> list = new ArrayList<>(Arrays.asList("Java","Pyton","Springboot"));
 		currentBorrowedBooks(list);
 		
+		printTransaction();
         
     }
-
+	
 	public static void currentBorrowedBooks(ArrayList<String> books) {
-		 
+		
 		
 		if (!books.isEmpty()) {
 			System.out.println("Books borrowed by user :: "+"Chetan"+" [ "+102+"]");
@@ -45,5 +46,14 @@ class Three {
 		}
 		
 		System.out.println("There are no books borrowed by user :: "+"Chetan"+" [ "+102+"]");
+	}
+	
+	public static void printTransaction(){
+		System.out.println("+----------------+----------+----------+-------------+-------------+");
+		System.out.println("| transaction_id | user_id  | book_id  | issue_date  | return_date |");
+		System.out.println("+----------------+----------+----------+-------------+-------------+");
+		System.out.printf("| %-14d | %-8s | %-8d | %-11s | %-11s |\n",1,1,2,"26-11-2025",null);
+		
+		System.out.println("+----------------+----------+----------+-------------+-------------+");
 	}
 }
