@@ -5,7 +5,8 @@ import java.util.Map;
 
 public class Duplicates {
     public static void main(String[] args) {
-        i 
+        int [] arr = {1,2,3,65,4,8,54,854,44,54,21,5,85,1,65,5,4};
+        System.out.println("Duplicates :: "+duplicateElements(arr));
     }
 
     public static List<Integer> duplicateElements(int [] arr){
@@ -20,6 +21,7 @@ public class Duplicates {
             }
         }
 
+        list.sort(null);
         return list;
     }
 }
