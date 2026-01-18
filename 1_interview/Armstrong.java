@@ -1,6 +1,7 @@
 public class Armstrong {
     public static void main(String[] args) {
         System.out.println("Number is Armstrong :: "+isArmstrong(153));
+        System.out.println("Number is Armstrong :: "+isArmstrong(121));
     }
 
     public static int cube(int n){
