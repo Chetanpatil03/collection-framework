@@ -8,3 +8,6 @@ Top interview Questions that are asked in an java interview
 - find factorial of given number.
 - Print fibonacci series upto N term.
 - Find missing number between 1 to N.
+- Reverse array without using inbuilt functions.
+- Find second largest element in array.
+- Finding N th largest element in array.
