@@ -5,3 +5,6 @@ Top interview Questions that are asked in an java interview
 - Find the largest element in an array
 - Check prime numbers from 1 to N.
 - Count frequency of numbers in an array.
+- find factorial of given number.
+- Print fibonacci series upto N term.
+- Find missing number between 1 to N.
