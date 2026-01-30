@@ -7,6 +7,8 @@ public class ReverseString {
         System.out.println("Reverse :: "+revString(str.toCharArray()));
         
         System.out.println("Reversed word [ Hello my name is chetan ]:: "+reverseWords("Hello my name is chetan"));
+
+        System.out.println("Replace [ ] by [%20] :: "+replaceString("Chetu patil mca"));
     }
 
     public static String revString(String string){
@@ -46,5 +48,7 @@ public class ReverseString {
         return revString;
     }
 
-    
+    public static String replaceString(String str){
+        return str.replace(" ", "%20");
+    }
 }
