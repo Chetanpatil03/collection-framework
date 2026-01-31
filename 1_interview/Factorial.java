@@ -1,5 +1,3 @@
-import Java_8.demo;
-
 public class Factorial {
     public static void main(String[] args) {
         System.out.println("Factorial of 5 :: "+factorial(5));        
