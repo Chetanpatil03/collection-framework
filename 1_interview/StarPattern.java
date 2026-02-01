@@ -4,7 +4,8 @@ public class StarPattern {
         // simpleSquare(5);
         // triangle(5);
         // ReverseTriangle(5);
-        triangleReverse(5);
+        // triangleReverse(5);
+        emptySquare(5);
     }
 
     public static void simpleSquare(int n) {
@@ -12,6 +13,24 @@ public class StarPattern {
             for (int j = 0; j < n; j++) {
                 System.out.print("*" + " ");
             }
+            System.out.println();
+        }
+    }
+
+    public static void emptySquare(int n){
+        
+        int start = 1, end = n;
+
+        for(int i = start; i<= end; i++){
+            for (int j = start; j <= end; j++) {
+                if (i == start || i == end || j == start || j == end) {
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+
             System.out.println();
         }
     }
