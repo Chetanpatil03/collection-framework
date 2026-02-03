@@ -1,4 +1,3 @@
-import java.security.KeyStore.Entry;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -12,6 +11,7 @@ public class RemoveDuplicates {
         System.out.println("After removing Duplicates :: "+removeDuplicateString("bachchhav"));
 
         showDuplicates(new int[]{2,5,3,7,8,9,6,2,8,9,6,4});
+        secondMax(new int[]{2,5,3,7,8,9,6,2,8,6,4});
     }
 
     public static String removeDuplicateString(String str){
@@ -20,13 +20,15 @@ public class RemoveDuplicates {
         // ArrayList<Integer> duplicates = new ArrayList<>();
 
         for (char c : str.toCharArray()) {
-            if (!exist.contains(c)) {
-                exist.add(c);
-                sb.append(c);
-            }
+            // if (!exist.contains(c)) {
+            //     exist.add(c);
+            //     sb.append(c);
+            // }
+
+            exist.add(c);
         }
 
-        return sb.toString();
+        return exist.toString();
     }
 
     public static void showDuplicates(int [] arr){
@@ -53,5 +55,22 @@ public class RemoveDuplicates {
 
         System.out.println("Duplicates :: "+dupli);
         System.out.println("Unique :: "+unique);
+    }
+
+    public static void secondMax(int[] arr){
+        int max = arr[0]; 
+        int secMax = arr[0]; 
+
+        for (int i : arr) {
+            if (i >= max) {
+                secMax = max;
+                max = i;
+            }
+            else if(i >= secMax && i < max){
+                secMax = i;
+            }
+        }
+
+        System.out.println("Second max :: "+secMax);
     }
 }
