@@ -1,9 +1,6 @@
 import java.util.Arrays;
 
 public class Sorting {
-    // Source - https://stackoverflow.com/a/28785614
-    // Posted by Yoga, modified by community. See post 'Timeline' for change history
-    // Retrieved 2026-02-04, License - CC BY-SA 3.0
 
     public static void main(String[] args) {
         int[] arr = { 6, 8, 7, 4, 312, 78, 54, 9, 12, 100, 89, 74 };
