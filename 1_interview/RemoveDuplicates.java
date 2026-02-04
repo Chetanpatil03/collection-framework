@@ -11,7 +11,7 @@ public class RemoveDuplicates {
         System.out.println("After removing Duplicates :: "+removeDuplicateString("bachchhav"));
 
         showDuplicates(new int[]{2,5,3,7,8,9,6,2,8,9,6,4});
-        secondMax(new int[]{2,5,3,7,8,9,6,2,8,6,4});
+        secondMax(new int[]{2,5,3,7,9,6,2,9,6,4});
     }
 
     public static String removeDuplicateString(String str){
@@ -62,11 +62,11 @@ public class RemoveDuplicates {
         int secMax = arr[0]; 
 
         for (int i : arr) {
-            if (i >= max) {
+            if (i > max) {
                 secMax = max;
                 max = i;
             }
-            else if(i >= secMax && i < max){
+            else if(i > secMax && i != max){
                 secMax = i;
             }
         }
