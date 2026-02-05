@@ -4,8 +4,11 @@ public class StarPattern {
         // simpleSquare(5);
         // triangle(5);
         // ReverseTriangle(5);
-        triangleReverse(5);
+        // triangleReverse(5);
         // emptySquare(5);
+
+        // triangleNumber(5);
+
     }
 
     public static void simpleSquare(int n) {
@@ -66,5 +69,15 @@ public class StarPattern {
         }
     }
 
+    public static void triangleNumber(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("1 ");
+            }
+            System.out.println();
+        }
+    }
+
+    
 
 }
