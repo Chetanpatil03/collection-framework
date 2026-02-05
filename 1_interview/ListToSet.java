@@ -13,6 +13,6 @@ public class ListToSet {
         System.out.println("Set :: "+set);
 
         List<String> setList = new ArrayList<>(set);
-        System.out.println("List :: "+new ArrayList<>(set));
+        System.out.println("List :: "+new ArrayList<>(setList));
     }
 }
