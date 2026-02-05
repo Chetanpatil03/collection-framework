@@ -1,6 +1,5 @@
 public class SecondLarge {
     public static void main(String[] args) {
-
         int [] arr = {25,69,95,5,9,6,6,85,9,6,5,9,5,5,6,56};
         System.out.println("Second large element :: "+secondLarge(arr));        
     }
