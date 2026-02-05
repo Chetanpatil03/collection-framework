@@ -4,7 +4,7 @@ public class StarPattern {
         // simpleSquare(5);
         // triangle(5);
         // ReverseTriangle(5);
-        // triangleReverse(5);
+        triangleReverse(5);
         // emptySquare(5);
     }
 
