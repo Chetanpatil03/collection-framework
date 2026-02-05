@@ -8,6 +8,7 @@ public class StarPattern {
         // emptySquare(5);
 
         // triangleNumber(5);
+        triangleNumberIncre(3);
 
     }
 
@@ -79,7 +80,7 @@ public class StarPattern {
     }
 
     public static void triangleNumberIncre(int n) {
-        int c = 0;
+        int c = 1;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(c+" ");
