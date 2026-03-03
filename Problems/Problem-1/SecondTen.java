@@ -138,8 +138,12 @@ public class SecondTen {
         while (b != 0) {
             int temp = b;
             b = a % b;
-            a = temp;
+            System.out.println(b);
+            a = temp; 
+            System.out.println(a);
         }
+
+        System.out.println(a);
         return a;
     }
 
@@ -157,6 +161,9 @@ public class SecondTen {
 
         System.out.println("words in string :: "+countWords("Chetan chudaman patil"));
         System.out.println("words in string :: "+removeWhitespaces("Chetan chudaman patil"));
+
+        System.out.println("Find gcd of 10-20 :: "+findGCD(8, 12));
     }
+
 
 }
