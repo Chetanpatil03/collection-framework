@@ -116,8 +116,11 @@ public class ThirdTen {
         // arrayAverage(new int[]{15,4,95,67,95,36,76,24,38,62});
         // printingPrime();
 
-        System.out.println("String anagram :: {listen}{silent} :: "+stringAnagrams("silent", "listen"));
+        // System.out.println("String anagram :: {listen}{silent} :: "+stringAnagrams("silent", "listen"));
+
+        frequency("nayan");
     }
+
 
     // 29. Write a program to find the frequency of each character in a string.
     public static void frequency(String s){
@@ -125,6 +128,8 @@ public class ThirdTen {
         for(char c : s.toCharArray()){
             map.put(c, map.getOrDefault(c, 0)+1);
         }
+
+        System.out.println(map);
     }
 }
 
