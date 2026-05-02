@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.stream.IntStream;
 
 public class ThirdTen {
@@ -116,6 +117,10 @@ public class ThirdTen {
         // printingPrime();
 
         System.out.println("String anagram :: {listen}{silent} :: "+stringAnagrams("silent", "listen"));
+    }
+
+    public static void frequency(String s){
+        HashMap<Character, Integer> map = new HashMap<>();
     }
 }
 
