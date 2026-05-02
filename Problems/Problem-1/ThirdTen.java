@@ -133,6 +133,6 @@ public class ThirdTen {
 -- 26. Write a program to find the average of elements in an array.
 27. Write a program to remove duplicate elements from an array.
 28. Write a program to convert a decimal number to binary.
-29. Write a program to find the frequency of each character in a string.
+-- 29. Write a program to find the frequency of each character in a string.
 30. Write a program to merge two arrays.
  */
