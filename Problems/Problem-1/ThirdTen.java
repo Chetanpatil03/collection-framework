@@ -119,8 +119,12 @@ public class ThirdTen {
         System.out.println("String anagram :: {listen}{silent} :: "+stringAnagrams("silent", "listen"));
     }
 
+    // 29. Write a program to find the frequency of each character in a string.
     public static void frequency(String s){
         HashMap<Character, Integer> map = new HashMap<>();
+        for(char c : s.toCharArray()){
+            map.put(c, map.getOrDefault(c, 0)+1);
+        }
     }
 }
 
